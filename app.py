@@ -7,8 +7,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="JMT Predictive Asset Health Dashboard",
-    layout="wide",
-    page_icon="📈"
+    layout="wide"
 )
 
 PRIMARY_COLOR = "#1f4788"
@@ -19,7 +18,7 @@ SUCCESS_COLOR = "#2a9d8f"
 
 def init_session_state():
     defaults = {
-        "current_page": "🏠 Overview",
+        "current_page": "Overview",
         "transform_applied": False,
         "presentation_mode": False
     }
@@ -86,10 +85,10 @@ def load_raw_data():
     try:
         return pd.read_csv("data/raw_bridge_data.csv")
     except FileNotFoundError:
-        st.error("❌ Raw data file not found. Please ensure data/raw_bridge_data.csv exists.")
+        st.error("Raw data file not found. Please ensure data/raw_bridge_data.csv exists.")
         st.stop()
     except Exception as exc:
-        st.error(f"❌ Error loading raw data: {exc}")
+        st.error(f"Error loading raw data: {exc}")
         st.stop()
 
 
@@ -98,10 +97,10 @@ def load_clean_data():
     try:
         return pd.read_csv("data/clean_bridge_data.csv")
     except FileNotFoundError:
-        st.error("❌ Clean data file not found. Please ensure data/clean_bridge_data.csv exists.")
+        st.error("Clean data file not found. Please ensure data/clean_bridge_data.csv exists.")
         st.stop()
     except Exception as exc:
-        st.error(f"❌ Error loading clean data: {exc}")
+        st.error(f"Error loading clean data: {exc}")
         st.stop()
 
 
@@ -111,10 +110,10 @@ def load_predictions():
         df = pd.read_csv("data/prediction_results.csv")
         return df
     except FileNotFoundError:
-        st.error("❌ Prediction results file not found. Please ensure data/prediction_results.csv exists.")
+        st.error("Prediction results file not found. Please ensure data/prediction_results.csv exists.")
         st.stop()
     except Exception as exc:
-        st.error(f"❌ Error loading prediction results: {exc}")
+        st.error(f"Error loading prediction results: {exc}")
         st.stop()
 
 
@@ -128,14 +127,14 @@ def navigation_sidebar():
 
         nav_choice = st.radio(
             "Navigate",
-            ["🏠 Overview", "📊 Data Ingestion & Transformation", "🔬 Model Training & Analysis", "🎯 Predictions & Recommendations"],
-            index=["🏠 Overview", "📊 Data Ingestion & Transformation", "🔬 Model Training & Analysis", "🎯 Predictions & Recommendations"].index(st.session_state.current_page),
+            ["Overview", "Data Ingestion & Transformation", "Model Training & Analysis", "Predictions & Recommendations"],
+            index=["Overview", "Data Ingestion & Transformation", "Model Training & Analysis", "Predictions & Recommendations"].index(st.session_state.current_page),
         )
         st.session_state.current_page = nav_choice
 
         if st.button("Reset Demo", type="secondary"):
             for key in ["transform_applied", "current_page"]:
-                st.session_state[key] = "🏠 Overview" if key == "current_page" else False
+                st.session_state[key] = "Overview" if key == "current_page" else False
             st.rerun()
 
 
@@ -156,8 +155,8 @@ def home_page():
 
     st.markdown("""<div class='narration-box'>Use the navigation menu or start the guided tutorial below.</div>""", unsafe_allow_html=True)
 
-    if st.button("🚀 Start Tutorial"):
-        st.session_state.current_page = "📊 Data Ingestion & Transformation"
+    if st.button("Start Tutorial"):
+        st.session_state.current_page = "Data Ingestion & Transformation"
         st.rerun()
 
 
@@ -188,7 +187,7 @@ def chapter_one():
         )
 
     st.markdown("### Transformation Pipeline")
-    if st.button("⚙️ Apply Data Transformation", key="transform_btn") or st.session_state.transform_applied:
+    if st.button("Apply Data Transformation", key="transform_btn") or st.session_state.transform_applied:
         st.session_state.transform_applied = True
         with st.spinner("Standardizing and engineering features..."):
             time.sleep(1.2)
@@ -204,11 +203,11 @@ def chapter_one():
         st.markdown("### Transformation Summary")
         st.markdown(
             """
-            - ✅ Standardized material descriptions into **steel**, **concrete**, and **wood**.
-            - ✅ Converted text inspection scores into a numeric health scale (1-5).
-            - ✅ Calculated **days since last inspection** regardless of original date format.
-            - ✅ Categorized traffic volumes into Low / Medium / High utilization bands.
-            - ✅ Extracted maintenance counts from 1,000 text history entries.
+            - Standardized material descriptions into **steel**, **concrete**, and **wood**.
+            - Converted text inspection scores into a numeric health scale (1-5).
+            - Calculated **days since last inspection** regardless of original date format.
+            - Categorized traffic volumes into Low / Medium / High utilization bands.
+            - Extracted maintenance counts from 1,000 text history entries.
             """
         )
     else:
@@ -217,12 +216,12 @@ def chapter_one():
     st.divider()
     col_prev, col_next = st.columns(2)
     with col_prev:
-        if st.button("⬅️ Back to Overview"):
-            st.session_state.current_page = "🏠 Overview"
+        if st.button("Back to Overview"):
+            st.session_state.current_page = "Overview"
             st.rerun()
     with col_next:
-        if st.button("Next: See How the Model Works ➡️"):
-            st.session_state.current_page = "🔬 Model Training & Analysis"
+        if st.button("Next: See How the Model Works"):
+            st.session_state.current_page = "Model Training & Analysis"
             st.rerun()
 
 
@@ -258,14 +257,14 @@ def chapter_two():
         survival_df.set_index("Bridge Age (years)"),
         use_container_width=True,
     )
-    st.caption("📈 As bridges age, the probability of structural integrity decreases non-linearly")
+    st.caption("As bridges age, the probability of structural integrity decreases non-linearly")
 
     col1, col2 = st.columns([3, 1])
     with col1:
         st.markdown("### Feature Importance")
     with col2:
         st.markdown("")
-        with st.popover("ℹ️ What is this?"):
+        with st.popover("What is this?"):
             st.write("Feature importance shows which factors the model considers most predictive of bridge failure.")
     importance_df = feature_importance_data().set_index("Factor")
     st.bar_chart(importance_df)
@@ -316,12 +315,12 @@ def chapter_two():
     st.divider()
     col_prev, col_next = st.columns(2)
     with col_prev:
-        if st.button("⬅️ Back to Data Transformation"):
-            st.session_state.current_page = "📊 Data Ingestion & Transformation"
+        if st.button("Back to Data Transformation"):
+            st.session_state.current_page = "Data Ingestion & Transformation"
             st.rerun()
     with col_next:
-        if st.button("Next: View Actionable Predictions ➡️"):
-            st.session_state.current_page = "🎯 Predictions & Recommendations"
+        if st.button("Next: View Actionable Predictions"):
+            st.session_state.current_page = "Predictions & Recommendations"
             st.rerun()
 
 
@@ -397,7 +396,7 @@ def chapter_three():
     st.dataframe(styled_table, use_container_width=True)
 
     st.download_button(
-        "💾 Export Filtered Results for Field Teams",
+        "Export Filtered Results for Field Teams",
         data=download_csv(filtered[display_cols]),
         file_name=f"bridge_risk_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
         mime="text/csv",
@@ -438,12 +437,12 @@ def chapter_three():
     st.divider()
     col_prev, col_next = st.columns(2)
     with col_prev:
-        if st.button("⬅️ Back to Model Analysis"):
-            st.session_state.current_page = "🔬 Model Training & Analysis"
+        if st.button("Back to Model Analysis"):
+            st.session_state.current_page = "Model Training & Analysis"
             st.rerun()
     with col_next:
-        if st.button("Start Over 🔁"):
-            st.session_state.current_page = "🏠 Overview"
+        if st.button("Start Over"):
+            st.session_state.current_page = "Overview"
             st.rerun()
 
 
@@ -453,11 +452,11 @@ def main():
     navigation_sidebar()
 
     page = st.session_state.current_page
-    if page == "🏠 Overview":
+    if page == "Overview":
         home_page()
-    elif page == "📊 Data Ingestion & Transformation":
+    elif page == "Data Ingestion & Transformation":
         chapter_one()
-    elif page == "🔬 Model Training & Analysis":
+    elif page == "Model Training & Analysis":
         chapter_two()
     else:
         chapter_three()
