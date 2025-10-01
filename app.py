@@ -1,5 +1,6 @@
 from datetime import datetime
 from io import StringIO
+import time
 
 import pandas as pd
 import streamlit as st
@@ -82,18 +83,39 @@ def apply_global_styles():
 
 @st.cache_data
 def load_raw_data():
-    return pd.read_csv("data/raw_bridge_data.csv")
+    try:
+        return pd.read_csv("data/raw_bridge_data.csv")
+    except FileNotFoundError:
+        st.error("❌ Raw data file not found. Please ensure data/raw_bridge_data.csv exists.")
+        st.stop()
+    except Exception as exc:
+        st.error(f"❌ Error loading raw data: {exc}")
+        st.stop()
 
 
 @st.cache_data
 def load_clean_data():
-    return pd.read_csv("data/clean_bridge_data.csv")
+    try:
+        return pd.read_csv("data/clean_bridge_data.csv")
+    except FileNotFoundError:
+        st.error("❌ Clean data file not found. Please ensure data/clean_bridge_data.csv exists.")
+        st.stop()
+    except Exception as exc:
+        st.error(f"❌ Error loading clean data: {exc}")
+        st.stop()
 
 
 @st.cache_data
 def load_predictions():
-    df = pd.read_csv("data/prediction_results.csv")
-    return df
+    try:
+        df = pd.read_csv("data/prediction_results.csv")
+        return df
+    except FileNotFoundError:
+        st.error("❌ Prediction results file not found. Please ensure data/prediction_results.csv exists.")
+        st.stop()
+    except Exception as exc:
+        st.error(f"❌ Error loading prediction results: {exc}")
+        st.stop()
 
 
 def navigation_sidebar():
@@ -114,7 +136,7 @@ def navigation_sidebar():
         if st.button("Reset Demo", type="secondary"):
             for key in ["transform_applied", "current_page"]:
                 st.session_state[key] = "🏠 Overview" if key == "current_page" else False
-            st.experimental_rerun()
+            st.rerun()
 
 
 def home_page():
@@ -136,7 +158,7 @@ def home_page():
 
     if st.button("🚀 Start Tutorial"):
         st.session_state.current_page = "📊 Data Ingestion & Transformation"
-        st.experimental_rerun()
+        st.rerun()
 
 
 def chapter_one():
@@ -169,7 +191,7 @@ def chapter_one():
     if st.button("⚙️ Apply Data Transformation", key="transform_btn") or st.session_state.transform_applied:
         st.session_state.transform_applied = True
         with st.spinner("Standardizing and engineering features..."):
-            st.sleep(1.2)
+            time.sleep(1.2)
         col_raw, col_clean = st.columns(2)
         with col_raw:
             st.caption("Before: Raw data sample")
@@ -197,11 +219,11 @@ def chapter_one():
     with col_prev:
         if st.button("⬅️ Back to Overview"):
             st.session_state.current_page = "🏠 Overview"
-            st.experimental_rerun()
+            st.rerun()
     with col_next:
         if st.button("Next: See How the Model Works ➡️"):
             st.session_state.current_page = "🔬 Model Training & Analysis"
-            st.experimental_rerun()
+            st.rerun()
 
 
 def survival_curve_data():
@@ -232,9 +254,19 @@ def chapter_two():
 
     st.markdown("### Survival Curve: Learned Failure Trends")
     survival_df = survival_curve_data()
-    st.line_chart(survival_df.set_index("Bridge Age (years)"))
+    st.line_chart(
+        survival_df.set_index("Bridge Age (years)"),
+        use_container_width=True,
+    )
+    st.caption("📈 As bridges age, the probability of structural integrity decreases non-linearly")
 
-    st.markdown("### Feature Importance")
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("### Feature Importance")
+    with col2:
+        st.markdown("")
+        with st.popover("ℹ️ What is this?"):
+            st.write("Feature importance shows which factors the model considers most predictive of bridge failure.")
     importance_df = feature_importance_data().set_index("Factor")
     st.bar_chart(importance_df)
     st.info("The model identified age as the strongest predictor, but material durability and traffic pressure are critical contributors.")
@@ -286,11 +318,11 @@ def chapter_two():
     with col_prev:
         if st.button("⬅️ Back to Data Transformation"):
             st.session_state.current_page = "📊 Data Ingestion & Transformation"
-            st.experimental_rerun()
+            st.rerun()
     with col_next:
         if st.button("Next: View Actionable Predictions ➡️"):
             st.session_state.current_page = "🎯 Predictions & Recommendations"
-            st.experimental_rerun()
+            st.rerun()
 
 
 def style_predictions(df: pd.DataFrame):
@@ -408,11 +440,11 @@ def chapter_three():
     with col_prev:
         if st.button("⬅️ Back to Model Analysis"):
             st.session_state.current_page = "🔬 Model Training & Analysis"
-            st.experimental_rerun()
+            st.rerun()
     with col_next:
         if st.button("Start Over 🔁"):
             st.session_state.current_page = "🏠 Overview"
-            st.experimental_rerun()
+            st.rerun()
 
 
 def main():
