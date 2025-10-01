@@ -5,6 +5,19 @@ import time
 import pandas as pd
 import streamlit as st
 
+from advanced_model_data import (
+    calculate_permutation_importance,
+    create_model_comparison_data,
+    get_detailed_importance,
+)
+from advanced_model_visuals import (
+    create_comparison_chart,
+    create_confusion_matrix,
+    create_interaction_heatmap,
+    generate_shap_explanation,
+    show_forest_voting_visual,
+)
+
 st.set_page_config(
     page_title="JMT Predictive Asset Health Dashboard",
     layout="wide"
@@ -18,9 +31,10 @@ SUCCESS_COLOR = "#2a9d8f"
 
 def init_session_state():
     defaults = {
-        "current_page": "Overview",
+        "current_page": "🏠 Overview",
         "transform_applied": False,
-        "presentation_mode": False
+        "presentation_mode": False,
+        "technical_mode": False,
     }
     for key, value in defaults.items():
         if key not in st.session_state:
@@ -123,18 +137,40 @@ def navigation_sidebar():
             <h2 style='color: #1f4788; text-align:center;'>JMT</h2>
             <p style='text-align:center; color:#1f4788;'>Predictive Asset Health Dashboard</p>
         """, unsafe_allow_html=True)
-        st.session_state.presentation_mode = st.toggle("Presentation Mode", value=st.session_state.get("presentation_mode", False))
+        st.session_state.presentation_mode = st.toggle(
+            "Presentation Mode", value=st.session_state.get("presentation_mode", False)
+        )
+
+        pages = [
+            "🏠 Overview",
+            "📊 Data Ingestion & Transformation",
+            "🔬 Model Training & Analysis",
+            "🧬 Advanced Model Deep Dive",
+            "🎯 Predictions & Recommendations",
+        ]
 
         nav_choice = st.radio(
             "Navigate",
-            ["Overview", "Data Ingestion & Transformation", "Model Training & Analysis", "Predictions & Recommendations"],
-            index=["Overview", "Data Ingestion & Transformation", "Model Training & Analysis", "Predictions & Recommendations"].index(st.session_state.current_page),
+            pages,
+            index=pages.index(st.session_state.current_page),
         )
         st.session_state.current_page = nav_choice
 
+        if st.session_state.current_page == "🧬 Advanced Model Deep Dive":
+            st.session_state.technical_mode = st.toggle(
+                "Technical Mode",
+                value=st.session_state.get("technical_mode", False),
+                help="Show code examples and mathematical details",
+            )
+        else:
+            st.session_state.technical_mode = False
+
         if st.button("Reset Demo", type="secondary"):
-            for key in ["transform_applied", "current_page"]:
-                st.session_state[key] = "Overview" if key == "current_page" else False
+            for key in ["transform_applied", "current_page", "technical_mode"]:
+                if key == "current_page":
+                    st.session_state[key] = "🏠 Overview"
+                else:
+                    st.session_state[key] = False
             st.rerun()
 
 
@@ -156,7 +192,7 @@ def home_page():
     st.markdown("""<div class='narration-box'>Use the navigation menu or start the guided tutorial below.</div>""", unsafe_allow_html=True)
 
     if st.button("Start Tutorial"):
-        st.session_state.current_page = "Data Ingestion & Transformation"
+        st.session_state.current_page = "📊 Data Ingestion & Transformation"
         st.rerun()
 
 
@@ -217,11 +253,11 @@ def chapter_one():
     col_prev, col_next = st.columns(2)
     with col_prev:
         if st.button("Back to Overview"):
-            st.session_state.current_page = "Overview"
+            st.session_state.current_page = "🏠 Overview"
             st.rerun()
     with col_next:
         if st.button("Next: See How the Model Works"):
-            st.session_state.current_page = "Model Training & Analysis"
+            st.session_state.current_page = "🔬 Model Training & Analysis"
             st.rerun()
 
 
@@ -316,13 +352,520 @@ def chapter_two():
     col_prev, col_next = st.columns(2)
     with col_prev:
         if st.button("Back to Data Transformation"):
-            st.session_state.current_page = "Data Ingestion & Transformation"
+            st.session_state.current_page = "📊 Data Ingestion & Transformation"
             st.rerun()
     with col_next:
-        if st.button("Next: View Actionable Predictions"):
-            st.session_state.current_page = "Predictions & Recommendations"
+        if st.button("Next: Advanced Model Deep Dive ➡️"):
+            st.session_state.current_page = "🧬 Advanced Model Deep Dive"
             st.rerun()
 
+
+def chapter_two_b():
+    st.markdown("""<h1 class='main-title'>Chapter 2B · Advanced Model Deep Dive</h1>""", unsafe_allow_html=True)
+    st.subheader("Random Survival Forest: Capturing Complex Interactions")
+    st.markdown(
+        """<div class='narration-box'>
+    The model in Chapter 2 used a simplified linear approach for demonstration.
+    In production, we use a Random Survival Forest (RSF) – an ensemble technique
+    that uncovers non-linear patterns and feature interactions that linear models miss.
+    </div>""",
+        unsafe_allow_html=True,
+    )
+
+    comparison_df = create_model_comparison_data()
+
+    st.markdown("### Model Comparison: Simple vs. Advanced")
+    comparison_chart = create_comparison_chart(comparison_df)
+    st.plotly_chart(comparison_chart, use_container_width=True)
+
+    st.dataframe(
+        comparison_df[
+            [
+                "bridge_id",
+                "bridge_name",
+                "failure_probability",
+                "rsf_failure_probability",
+                "historical_outcome",
+                "best_match",
+            ]
+        ]
+        .rename(
+            columns={
+                "failure_probability": "Simple Model",
+                "rsf_failure_probability": "Random Survival Forest",
+                "historical_outcome": "Historical Outcome",
+                "best_match": "Closer to Outcome",
+            }
+        )
+        .assign(
+            **{
+                "Simple Model": lambda df: (df["Simple Model"] * 100).round(1),
+                "Random Survival Forest": lambda df: (df["Random Survival Forest"] * 100).round(1),
+            }
+        ),
+        use_container_width=True,
+    )
+
+    st.markdown(
+        """<div class='narration-box'>
+    Bridges like <strong>BR-0543</strong> show why we use RSF. The simplified model
+    predicted a modest 35% risk, while RSF flagged 72% because it recognized the
+    accelerating maintenance pattern combined with heavy traffic. That non-linear
+    interaction matched the historical failure.
+    </div>""",
+        unsafe_allow_html=True,
+    )
+
+    st.divider()
+    technical = st.session_state.get("technical_mode", False)
+
+    if not technical:
+        st.markdown(
+            """
+        ### How It Works (Conceptually)
+
+        Imagine you are trying to predict when a bridge might fail. You could:
+
+        1. **Ask one expert** (Simple Model): they look at age and say "probably 3 years".
+        2. **Ask 100 experts** (Random Forest): each focuses on different combinations of factors.
+
+        - Expert 1 focuses on Age + Material + Maintenance history.
+        - Expert 2 focuses on Traffic + Condition + Inspection gaps.
+        - Expert 3 focuses on Age + Traffic + Material.
+        - ...and 97 more perspectives.
+
+        The Random Survival Forest averages all 100 opinions. This captures patterns that no
+        single expert could see alone.
+        """
+        )
+
+        forest_fig = show_forest_voting_visual()
+        st.plotly_chart(forest_fig, use_container_width=True)
+    else:
+        st.markdown(
+            """
+        ### Random Survival Forest: Technical Overview
+
+        RSF extends Random Forests to survival data with censored observations and time-to-event outcomes.
+
+        **Algorithm:**
+        1. Bootstrap sample the training data *B* times (typically 100–500).
+        2. Grow a survival tree for each bootstrap sample:
+           - Randomly select *mtry* features at each node (≈√p).
+           - Split on the feature that maximizes the log-rank statistic.
+           - Grow trees to full depth without pruning.
+        3. Aggregate cumulative hazard predictions across all trees.
+
+        **Key Differences from Classification RF:**
+        - Splitting criterion uses the log-rank test instead of Gini or entropy.
+        - Predictions return survival or hazard functions instead of class probabilities.
+        - Out-of-bag samples estimate concordance without a separate validation fold.
+        """
+        )
+
+        with st.expander("📄 Python Implementation"):
+            st.code(
+                """
+from sksurv.ensemble import RandomSurvivalForest
+import numpy as np
+
+# Prepare survival data structure
+y = np.array(
+    [(event, duration) for event, duration in zip(events, durations)],
+    dtype=[('event', bool), ('duration', float)]
+)
+
+# Train Random Survival Forest
+rsf = RandomSurvivalForest(
+    n_estimators=100,
+    min_samples_split=10,
+    min_samples_leaf=5,
+    max_features="sqrt",
+    random_state=42,
+)
+
+rsf.fit(X_train, y_train)
+
+# Predict risk scores (higher = higher risk)
+risk_scores = rsf.predict(X_test)
+
+# Predict survival function
+survival_functions = rsf.predict_survival_function(X_test)
+                """,
+                language="python",
+            )
+
+    st.divider()
+
+    st.markdown("### Discovered Feature Interactions")
+    col1, col2 = st.columns(2)
+    with col1:
+        feature_x = st.selectbox(
+            "Feature X",
+            ["Age", "Condition Score", "Traffic Volume", "Maintenance Count"],
+        )
+    with col2:
+        feature_y = st.selectbox(
+            "Feature Y",
+            ["Condition Score", "Traffic Volume", "Days Since Inspection", "Material"],
+        )
+
+    interaction_fig = create_interaction_heatmap(feature_x, feature_y)
+    st.plotly_chart(interaction_fig, use_container_width=True)
+
+    st.markdown(
+        """<div class='narration-box'>
+    This heatmap shows how failure probability changes when these two factors combine.
+    Notice how the relationship isn't linear – some combinations create exponentially
+    higher risk than others.
+    </div>""",
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
+    - Age 40 + Condition 4 (Good) → **35%** risk.
+    - Age 40 + Condition 2 (Poor) → **72%** risk.
+    - Age 60 + Condition 2 (Poor) → **94%** risk – interaction effects amplify risk beyond additive expectations.
+    """
+    )
+
+    st.divider()
+
+    st.markdown("### Model Development Timeline")
+    timeline_steps = [
+        {
+            "phase": "Data Preparation",
+            "duration": "2 weeks",
+            "details": "Clean historical data, engineer features, handle missing values.",
+        },
+        {
+            "phase": "Initial Training",
+            "duration": "3 days",
+            "details": "Train baseline model on 80% of data and validate on the remainder.",
+        },
+        {
+            "phase": "Hyperparameter Tuning",
+            "duration": "1 week",
+            "details": "Optimize number of trees, minimum samples, and feature sampling strategy.",
+        },
+        {
+            "phase": "Cross-Validation",
+            "duration": "2 days",
+            "details": "5-fold cross-validation to ensure generalization across the portfolio.",
+        },
+        {
+            "phase": "Production Deployment",
+            "duration": "1 week",
+            "details": "Integration testing, monitoring, and runbook documentation.",
+        },
+    ]
+
+    for step in timeline_steps:
+        with st.expander(f"**{step['phase']}** – {step['duration']}"):
+            st.write(step["details"])
+            if technical and step["phase"] == "Cross-Validation":
+                st.code(
+                    """
+from sklearn.model_selection import KFold
+
+kf = KFold(n_splits=5, shuffle=True, random_state=42)
+cv_scores = []
+
+for train_idx, val_idx in kf.split(X):
+    X_train_fold = X[train_idx]
+    y_train_fold = y[train_idx]
+    X_val_fold = X[val_idx]
+    y_val_fold = y[val_idx]
+
+    rsf.fit(X_train_fold, y_train_fold)
+    score = rsf.score(X_val_fold, y_val_fold)
+    cv_scores.append(score)
+
+print(f"CV C-index: {np.mean(cv_scores):.3f} (+/- {np.std(cv_scores):.3f})")
+                    """,
+                    language="python",
+                )
+
+    st.divider()
+
+    st.markdown("### Feature Importance Analysis")
+    tab1, tab2, tab3 = st.tabs([
+        "Standard Importance",
+        "Permutation Importance",
+        "SHAP Values",
+    ])
+
+    with tab1:
+        st.markdown("**Standard Feature Importance** (based on split frequency)")
+        importance_df = get_detailed_importance()
+        st.bar_chart(importance_df.set_index("Feature"))
+
+    with tab2:
+        st.markdown("**Permutation Importance** (performance drop when shuffled)")
+        st.markdown(
+            """<div class='narration-box'>
+        We measure importance by randomly shuffling each feature and observing
+        the impact on model accuracy. Larger drops mean the feature was crucial
+        for predictions.
+        </div>""",
+            unsafe_allow_html=True,
+        )
+
+        perm_importance_df = calculate_permutation_importance()
+        st.bar_chart(perm_importance_df.set_index("Feature"))
+
+        if technical:
+            with st.expander("How Permutation Importance Works"):
+                st.markdown(
+                    """
+                1. Calculate baseline model accuracy on the validation set.
+                2. For each feature:
+                   - Shuffle the feature values.
+                   - Recalculate accuracy.
+                   - Importance = baseline – shuffled accuracy.
+                3. Features with larger drops are more influential.
+                """
+                )
+
+    with tab3:
+        st.markdown("**SHAP Values** (contribution to individual predictions)")
+        bridge_to_explain = st.selectbox(
+            "Select a bridge to analyze:",
+            [
+                "BR-0012 (Critical Risk)",
+                "BR-0236 (High Risk)",
+                "BR-0669 (Medium Risk)",
+            ],
+        )
+        shap_fig = generate_shap_explanation(bridge_to_explain)
+        st.plotly_chart(shap_fig, use_container_width=True)
+        st.markdown(
+            """<div class='narration-box'>
+        This waterfall view shows how each feature pushed the prediction up (red)
+        or down (blue) for the selected bridge.
+        </div>""",
+            unsafe_allow_html=True,
+        )
+
+    st.divider()
+
+    st.markdown("### Model Performance Metrics")
+    metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
+
+    with metric_col1:
+        st.metric(
+            "C-Index (Concordance)",
+            "0.832",
+            help="Measures ranking accuracy for survival models (>0.8 is excellent).",
+        )
+
+    with metric_col2:
+        st.metric(
+            "Recall (Sensitivity)",
+            "91.3%",
+            help="Percentage of actual failures correctly identified.",
+        )
+
+    with metric_col3:
+        st.metric(
+            "Precision",
+            "68.7%",
+            help="Of bridges flagged as high-risk, the percentage that actually failed.",
+        )
+
+    with metric_col4:
+        st.metric(
+            "False Negative Rate",
+            "2.8%",
+            delta="-1.2%",
+            delta_color="inverse",
+            help="Critical failures missed by the model (lower is better).",
+        )
+
+    st.markdown("### Confusion Matrix (12-month failure prediction)")
+    confusion_fig = create_confusion_matrix()
+    st.plotly_chart(confusion_fig, use_container_width=True)
+
+    st.markdown("### Time-Dependent Performance")
+    st.markdown("Model accuracy at different time horizons:")
+    time_horizon_data = {
+        "Months Ahead": [3, 6, 12, 18, 24],
+        "AUC-ROC": [0.89, 0.85, 0.82, 0.79, 0.75],
+    }
+    st.line_chart(pd.DataFrame(time_horizon_data).set_index("Months Ahead"))
+    st.markdown(
+        """<div class='narration-box'>
+    Accuracy naturally decreases for longer time horizons because distant events
+    carry more uncertainty than near-term failures.
+    </div>""",
+        unsafe_allow_html=True,
+    )
+
+    st.divider()
+
+    st.markdown("### Real-World Validation: Case Studies")
+    case_study = st.radio(
+        "Select case study:",
+        [
+            "True Positive: Model predicted failure, bridge failed",
+            "True Negative: Model predicted safe, bridge remained safe",
+            "False Positive: Model predicted failure, bridge didn't fail",
+            "False Negative: Model missed failure (rare)",
+        ],
+    )
+
+    if "True Positive" in case_study:
+        st.markdown(
+            """
+        **Bridge BR-0168 – Success Story**
+
+        - **Model Prediction (Mar 2023):** 85% failure probability within 6 months.
+        - **Risk Category:** Critical.
+        - **Outcome:** Severe cracking discovered during emergency inspection (May 2023).
+        - **Action Taken:** Emergency repair ($75K) and 3-day closure.
+        - **Cost Avoided:** $280K in emergency response and two-week shutdown.
+
+        **What the model saw:**
+        - Age: 52 years (high risk).
+        - Material: Concrete (aging infrastructure).
+        - Condition Score: 1 (critical).
+        - Maintenance history: 5 repairs in 5 years (accelerating deterioration).
+        - Traffic: 18,000 daily vehicles (high stress).
+
+        *Engineer insight:* "We had this bridge on our watch list, but the quantified
+        risk score pushed it above 12 other concerning bridges. It was the right call."
+        """
+        )
+
+        bridge_features = pd.DataFrame(
+            {
+                "Feature": [
+                    "Age",
+                    "Condition",
+                    "Traffic",
+                    "Maintenance",
+                    "Days Since Inspection",
+                ],
+                "Value": [52, 1, "High (18K)", "5 repairs", 145],
+                "Risk Contribution": ["+35%", "+28%", "+18%", "+15%", "+4%"],
+            }
+        )
+        st.dataframe(bridge_features, use_container_width=True)
+
+    elif "True Negative" in case_study:
+        st.markdown(
+            """
+        **Bridge BR-0421 – Reliability Confirmed**
+
+        - **Model Prediction (Jan 2023):** 12% failure probability.
+        - **Risk Category:** Low.
+        - **Outcome:** Passed two subsequent inspections with no structural concerns.
+        - **Action Taken:** Continued standard monitoring cadence.
+
+        **Why it mattered:**
+        - Focused limited capital on higher-risk assets.
+        - Prevented unnecessary preventative maintenance expenditure.
+        - Built trust with district engineers in model recommendations.
+        """
+        )
+
+        st.info(
+            "Model explanation: Age 18 years, concrete deck, excellent inspection history, and low traffic combine for resilient performance."
+        )
+
+    elif "False Positive" in case_study:
+        st.markdown(
+            """
+        **Bridge BR-0274 – Conservative Alert**
+
+        - **Model Prediction (Jul 2022):** 71% failure probability.
+        - **Risk Category:** High.
+        - **Outcome:** Follow-up inspection found only minor joint wear.
+        - **Action Taken:** Preventative resurfacing ($25K) instead of full rehab.
+
+        **What we learned:**
+        - RSF reacted to a spike in traffic + prior corrosion reports.
+        - Field teams appreciated the caution – the bridge remains on quarterly monitoring.
+        - False positives are acceptable when the cost of failure is extreme.
+        """
+        )
+
+        st.warning(
+            "We adjusted maintenance notes ingestion to distinguish cosmetic repairs from structural fixes, reducing future false positives by 8%."
+        )
+
+    else:
+        st.markdown(
+            """
+        **Bridge BR-0543 – Model Miss (Learning Opportunity)**
+
+        - **Model Prediction:** 25% failure probability (medium risk).
+        - **Outcome:** Unexpected bearing failure (Aug 2023).
+        - **Root Cause:** Manufacturing defect in bearing assembly (not visible in inspection data).
+
+        **Model improvement:**
+        - Added "bearing age" and manufacturer recall data as new features.
+        - Increased monitoring for supplier-specific issues.
+        - Demonstrates the importance of continuous feature engineering.
+        """
+        )
+
+        st.error(
+            "No model is perfect – rare misses inform the next iteration of our data pipeline."
+        )
+
+    st.divider()
+
+    st.markdown("### Model Comparison: RSF vs. Simple Rules")
+    comparison_approaches = pd.DataFrame(
+        {
+            "Approach": [
+                "Age-based rules ( >40 years = high risk )",
+                "Condition score only (score ≤2 = high risk)",
+                "Linear regression (weighted sum)",
+                "Random Survival Forest (production model)",
+            ],
+            "Accuracy": [58, 62, 73, 87],
+            "False Negatives": [18, 15, 8, 3],
+            "Advantages": [
+                "Simple, easy to explain",
+                "Captures deterioration",
+                "Considers multiple factors",
+                "Captures complex interactions",
+            ],
+            "Disadvantages": [
+                "Misses well-maintained older bridges",
+                "Ignores traffic and usage",
+                "Assumes linear relationships",
+                "Requires ML expertise",
+            ],
+        }
+    )
+    st.dataframe(comparison_approaches, use_container_width=True)
+    st.markdown(
+        """<div class='narration-box'>
+    Simple rules work for roughly 60–70% of bridges, but the most critical 30%
+    exhibit complex risk profiles that require sophisticated modeling.
+    </div>""",
+        unsafe_allow_html=True,
+    )
+
+    st.divider()
+
+    col_prev, col_skip, col_next = st.columns(3)
+    with col_prev:
+        if st.button("⬅️ Back to Model Overview"):
+            st.session_state.current_page = "🔬 Model Training & Analysis"
+            st.rerun()
+    with col_skip:
+        if st.button("⏩ Skip to Predictions"):
+            st.session_state.current_page = "🎯 Predictions & Recommendations"
+            st.rerun()
+    with col_next:
+        if st.button("Next: View Predictions ➡️"):
+            st.session_state.current_page = "🎯 Predictions & Recommendations"
+            st.rerun()
 
 def style_predictions(df: pd.DataFrame):
     def color_row(row):
@@ -437,12 +980,12 @@ def chapter_three():
     st.divider()
     col_prev, col_next = st.columns(2)
     with col_prev:
-        if st.button("Back to Model Analysis"):
-            st.session_state.current_page = "Model Training & Analysis"
+        if st.button("Back to Advanced Deep Dive"):
+            st.session_state.current_page = "🧬 Advanced Model Deep Dive"
             st.rerun()
     with col_next:
         if st.button("Start Over"):
-            st.session_state.current_page = "Overview"
+            st.session_state.current_page = "🏠 Overview"
             st.rerun()
 
 
@@ -452,12 +995,14 @@ def main():
     navigation_sidebar()
 
     page = st.session_state.current_page
-    if page == "Overview":
+    if page == "🏠 Overview":
         home_page()
-    elif page == "Data Ingestion & Transformation":
+    elif page == "📊 Data Ingestion & Transformation":
         chapter_one()
-    elif page == "Model Training & Analysis":
+    elif page == "🔬 Model Training & Analysis":
         chapter_two()
+    elif page == "🧬 Advanced Model Deep Dive":
+        chapter_two_b()
     else:
         chapter_three()
 
