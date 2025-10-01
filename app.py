@@ -31,7 +31,7 @@ SUCCESS_COLOR = "#2a9d8f"
 
 def init_session_state():
     defaults = {
-        "current_page": "🏠 Overview",
+        "current_page": "Overview",
         "transform_applied": False,
         "presentation_mode": False,
         "technical_mode": False,
@@ -142,11 +142,11 @@ def navigation_sidebar():
         )
 
         pages = [
-            "🏠 Overview",
-            "📊 Data Ingestion & Transformation",
-            "🔬 Model Training & Analysis",
-            "🧬 Advanced Model Deep Dive",
-            "🎯 Predictions & Recommendations",
+            "Overview",
+            "Data Ingestion & Transformation",
+            "Model Training & Analysis",
+            "Advanced Model Deep Dive",
+            "Predictions & Recommendations",
         ]
 
         nav_choice = st.radio(
@@ -156,7 +156,7 @@ def navigation_sidebar():
         )
         st.session_state.current_page = nav_choice
 
-        if st.session_state.current_page == "🧬 Advanced Model Deep Dive":
+        if st.session_state.current_page == "Advanced Model Deep Dive":
             st.session_state.technical_mode = st.toggle(
                 "Technical Mode",
                 value=st.session_state.get("technical_mode", False),
@@ -168,7 +168,7 @@ def navigation_sidebar():
         if st.button("Reset Demo", type="secondary"):
             for key in ["transform_applied", "current_page", "technical_mode"]:
                 if key == "current_page":
-                    st.session_state[key] = "🏠 Overview"
+                    st.session_state[key] = "Overview"
                 else:
                     st.session_state[key] = False
             st.rerun()
@@ -192,7 +192,7 @@ def home_page():
     st.markdown("""<div class='narration-box'>Use the navigation menu or start the guided tutorial below.</div>""", unsafe_allow_html=True)
 
     if st.button("Start Tutorial"):
-        st.session_state.current_page = "📊 Data Ingestion & Transformation"
+        st.session_state.current_page = "Data Ingestion & Transformation"
         st.rerun()
 
 
@@ -253,11 +253,11 @@ def chapter_one():
     col_prev, col_next = st.columns(2)
     with col_prev:
         if st.button("Back to Overview"):
-            st.session_state.current_page = "🏠 Overview"
+            st.session_state.current_page = "Overview"
             st.rerun()
     with col_next:
         if st.button("Next: See How the Model Works"):
-            st.session_state.current_page = "🔬 Model Training & Analysis"
+            st.session_state.current_page = "Model Training & Analysis"
             st.rerun()
 
 
@@ -352,11 +352,11 @@ def chapter_two():
     col_prev, col_next = st.columns(2)
     with col_prev:
         if st.button("Back to Data Transformation"):
-            st.session_state.current_page = "📊 Data Ingestion & Transformation"
+            st.session_state.current_page = "Data Ingestion & Transformation"
             st.rerun()
     with col_next:
-        if st.button("Next: Advanced Model Deep Dive ➡️"):
-            st.session_state.current_page = "🧬 Advanced Model Deep Dive"
+        if st.button("Next: Advanced Model Deep Dive"):
+            st.session_state.current_page = "Advanced Model Deep Dive"
             st.rerun()
 
 
@@ -463,7 +463,7 @@ def chapter_two_b():
         """
         )
 
-        with st.expander("📄 Python Implementation"):
+        with st.expander("Python Implementation"):
             st.code(
                 """
 from sksurv.ensemble import RandomSurvivalForest
@@ -855,16 +855,16 @@ print(f"CV C-index: {np.mean(cv_scores):.3f} (+/- {np.std(cv_scores):.3f})")
 
     col_prev, col_skip, col_next = st.columns(3)
     with col_prev:
-        if st.button("⬅️ Back to Model Overview"):
-            st.session_state.current_page = "🔬 Model Training & Analysis"
+        if st.button("Back to Model Overview"):
+            st.session_state.current_page = "Model Training & Analysis"
             st.rerun()
     with col_skip:
-        if st.button("⏩ Skip to Predictions"):
-            st.session_state.current_page = "🎯 Predictions & Recommendations"
+        if st.button("Skip to Predictions"):
+            st.session_state.current_page = "Predictions & Recommendations"
             st.rerun()
     with col_next:
-        if st.button("Next: View Predictions ➡️"):
-            st.session_state.current_page = "🎯 Predictions & Recommendations"
+        if st.button("Next: View Predictions"):
+            st.session_state.current_page = "Predictions & Recommendations"
             st.rerun()
 
 def style_predictions(df: pd.DataFrame):
@@ -981,11 +981,11 @@ def chapter_three():
     col_prev, col_next = st.columns(2)
     with col_prev:
         if st.button("Back to Advanced Deep Dive"):
-            st.session_state.current_page = "🧬 Advanced Model Deep Dive"
+            st.session_state.current_page = "Advanced Model Deep Dive"
             st.rerun()
     with col_next:
         if st.button("Start Over"):
-            st.session_state.current_page = "🏠 Overview"
+            st.session_state.current_page = "Overview"
             st.rerun()
 
 
@@ -995,13 +995,13 @@ def main():
     navigation_sidebar()
 
     page = st.session_state.current_page
-    if page == "🏠 Overview":
+    if page == "Overview":
         home_page()
-    elif page == "📊 Data Ingestion & Transformation":
+    elif page == "Data Ingestion & Transformation":
         chapter_one()
-    elif page == "🔬 Model Training & Analysis":
+    elif page == "Model Training & Analysis":
         chapter_two()
-    elif page == "🧬 Advanced Model Deep Dive":
+    elif page == "Advanced Model Deep Dive":
         chapter_two_b()
     else:
         chapter_three()
