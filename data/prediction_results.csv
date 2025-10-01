@@ -1,0 +1,1001 @@
+bridge_id,failure_probability,predicted_months_to_failure,risk_category,recommended_action
+BR-0895,0.98,3,Critical,Immediate inspection required
+BR-0894,0.98,3,Critical,Immediate inspection required
+BR-0855,0.98,3,Critical,Immediate inspection required
+BR-0631,0.98,3,Critical,Immediate inspection required
+BR-0541,0.98,3,Critical,Immediate inspection required
+BR-0424,0.98,3,Critical,Immediate inspection required
+BR-0369,0.98,3,Critical,Immediate inspection required
+BR-0308,0.98,3,Critical,Immediate inspection required
+BR-0280,0.98,3,Critical,Immediate inspection required
+BR-0255,0.98,3,Critical,Immediate inspection required
+BR-0253,0.98,3,Critical,Immediate inspection required
+BR-0246,0.98,3,Critical,Immediate inspection required
+BR-0201,0.98,3,Critical,Immediate inspection required
+BR-0170,0.98,3,Critical,Immediate inspection required
+BR-0158,0.98,3,Critical,Immediate inspection required
+BR-0144,0.98,3,Critical,Immediate inspection required
+BR-0101,0.98,3,Critical,Immediate inspection required
+BR-0299,0.977,4,Critical,Immediate inspection required
+BR-0558,0.976,4,Critical,Immediate inspection required
+BR-0099,0.974,4,Critical,Immediate inspection required
+BR-0178,0.97,4,Critical,Immediate inspection required
+BR-0225,0.968,4,Critical,Immediate inspection required
+BR-0260,0.966,4,Critical,Immediate inspection required
+BR-0641,0.966,4,Critical,Immediate inspection required
+BR-0149,0.966,4,Critical,Immediate inspection required
+BR-0903,0.965,4,Critical,Immediate inspection required
+BR-0865,0.958,4,Critical,Immediate inspection required
+BR-0590,0.949,4,Critical,Immediate inspection required
+BR-0164,0.948,4,Critical,Immediate inspection required
+BR-0418,0.948,4,Critical,Immediate inspection required
+BR-0077,0.944,4,Critical,Immediate inspection required
+BR-0389,0.943,4,Critical,Immediate inspection required
+BR-0127,0.942,4,Critical,Immediate inspection required
+BR-0380,0.94,4,Critical,Immediate inspection required
+BR-0230,0.939,4,Critical,Immediate inspection required
+BR-0725,0.925,5,Critical,Immediate inspection required
+BR-0653,0.924,5,Critical,Immediate inspection required
+BR-0690,0.924,5,Critical,Immediate inspection required
+BR-0438,0.922,5,Critical,Immediate inspection required
+BR-0883,0.921,5,Critical,Immediate inspection required
+BR-0977,0.918,5,Critical,Immediate inspection required
+BR-0012,0.918,5,Critical,Immediate inspection required
+BR-0878,0.918,5,Critical,Immediate inspection required
+BR-0813,0.918,5,Critical,Immediate inspection required
+BR-0527,0.912,5,Critical,Immediate inspection required
+BR-0194,0.911,5,Critical,Immediate inspection required
+BR-0746,0.911,5,Critical,Immediate inspection required
+BR-0373,0.908,5,Critical,Immediate inspection required
+BR-0154,0.907,5,Critical,Immediate inspection required
+BR-0710,0.907,5,Critical,Immediate inspection required
+BR-0338,0.904,5,Critical,Immediate inspection required
+BR-0769,0.9,5,Critical,Immediate inspection required
+BR-0072,0.899,5,Critical,Immediate inspection required
+BR-0070,0.898,5,Critical,Immediate inspection required
+BR-0346,0.896,6,Critical,Immediate inspection required
+BR-0932,0.895,6,Critical,Immediate inspection required
+BR-0768,0.893,6,Critical,Immediate inspection required
+BR-0647,0.89,6,Critical,Immediate inspection required
+BR-0261,0.887,6,Critical,Immediate inspection required
+BR-0300,0.885,6,Critical,Immediate inspection required
+BR-0777,0.884,6,Critical,Immediate inspection required
+BR-0998,0.882,6,Critical,Immediate inspection required
+BR-0840,0.879,6,Critical,Immediate inspection required
+BR-0973,0.877,6,Critical,Immediate inspection required
+BR-0440,0.876,6,Critical,Immediate inspection required
+BR-0472,0.875,6,Critical,Immediate inspection required
+BR-0199,0.875,6,Critical,Immediate inspection required
+BR-0402,0.874,6,Critical,Immediate inspection required
+BR-0978,0.874,6,Critical,Immediate inspection required
+BR-0854,0.872,6,Critical,Immediate inspection required
+BR-0451,0.872,6,Critical,Immediate inspection required
+BR-0906,0.871,6,Critical,Immediate inspection required
+BR-0859,0.87,6,Critical,Immediate inspection required
+BR-0711,0.87,6,Critical,Immediate inspection required
+BR-0773,0.867,6,Critical,Immediate inspection required
+BR-0388,0.867,6,Critical,Immediate inspection required
+BR-0930,0.866,6,Critical,Immediate inspection required
+BR-0257,0.862,6,Critical,Immediate inspection required
+BR-0519,0.86,6,Critical,Immediate inspection required
+BR-0210,0.858,6,Critical,Immediate inspection required
+BR-0168,0.856,6,Critical,Immediate inspection required
+BR-0247,0.856,6,Critical,Immediate inspection required
+BR-0309,0.856,6,Critical,Immediate inspection required
+BR-0278,0.855,6,Critical,Immediate inspection required
+BR-0868,0.854,7,Critical,Immediate inspection required
+BR-0232,0.853,7,Critical,Immediate inspection required
+BR-0106,0.853,7,Critical,Immediate inspection required
+BR-0002,0.853,7,Critical,Immediate inspection required
+BR-0344,0.852,7,Critical,Immediate inspection required
+BR-0010,0.852,7,Critical,Immediate inspection required
+BR-0700,0.851,7,Critical,Immediate inspection required
+BR-0138,0.851,7,Critical,Immediate inspection required
+BR-0827,0.849,7,Critical,Immediate inspection required
+BR-0673,0.847,7,Critical,Immediate inspection required
+BR-0298,0.844,7,Critical,Immediate inspection required
+BR-0793,0.843,7,Critical,Immediate inspection required
+BR-0972,0.843,7,Critical,Immediate inspection required
+BR-0212,0.843,7,Critical,Immediate inspection required
+BR-0609,0.842,7,Critical,Immediate inspection required
+BR-0025,0.84,7,Critical,Immediate inspection required
+BR-0557,0.839,7,Critical,Immediate inspection required
+BR-0449,0.838,7,Critical,Immediate inspection required
+BR-0912,0.837,7,Critical,Immediate inspection required
+BR-0835,0.837,7,Critical,Immediate inspection required
+BR-0555,0.837,7,Critical,Immediate inspection required
+BR-0221,0.834,7,Critical,Immediate inspection required
+BR-0226,0.833,7,Critical,Immediate inspection required
+BR-0992,0.833,7,Critical,Immediate inspection required
+BR-0879,0.833,7,Critical,Immediate inspection required
+BR-0976,0.828,7,Critical,Immediate inspection required
+BR-0553,0.827,7,Critical,Immediate inspection required
+BR-0184,0.827,7,Critical,Immediate inspection required
+BR-0567,0.826,7,Critical,Immediate inspection required
+BR-0576,0.823,7,Critical,Immediate inspection required
+BR-0534,0.823,7,Critical,Immediate inspection required
+BR-0703,0.822,7,Critical,Immediate inspection required
+BR-0198,0.82,7,Critical,Immediate inspection required
+BR-0315,0.819,7,Critical,Immediate inspection required
+BR-0136,0.818,7,Critical,Immediate inspection required
+BR-0161,0.818,7,Critical,Immediate inspection required
+BR-0123,0.816,7,Critical,Immediate inspection required
+BR-0364,0.816,7,Critical,Immediate inspection required
+BR-0229,0.816,7,Critical,Immediate inspection required
+BR-0582,0.815,7,Critical,Immediate inspection required
+BR-0508,0.812,8,Critical,Immediate inspection required
+BR-0825,0.812,8,Critical,Immediate inspection required
+BR-0585,0.811,8,Critical,Immediate inspection required
+BR-0860,0.811,8,Critical,Immediate inspection required
+BR-0129,0.811,8,Critical,Immediate inspection required
+BR-0914,0.81,8,Critical,Immediate inspection required
+BR-0383,0.809,8,Critical,Immediate inspection required
+BR-0095,0.809,8,Critical,Immediate inspection required
+BR-0645,0.808,8,Critical,Immediate inspection required
+BR-0901,0.808,8,Critical,Immediate inspection required
+BR-0479,0.808,8,Critical,Immediate inspection required
+BR-0679,0.808,8,Critical,Immediate inspection required
+BR-0851,0.806,8,Critical,Immediate inspection required
+BR-0133,0.805,8,Critical,Immediate inspection required
+BR-0537,0.804,8,Critical,Immediate inspection required
+BR-0761,0.804,8,Critical,Immediate inspection required
+BR-0594,0.803,8,Critical,Immediate inspection required
+BR-0722,0.802,8,Critical,Immediate inspection required
+BR-0531,0.802,8,Critical,Immediate inspection required
+BR-0957,0.802,8,Critical,Immediate inspection required
+BR-0796,0.802,8,Critical,Immediate inspection required
+BR-0175,0.801,8,Critical,Immediate inspection required
+BR-0599,0.8,8,Critical,Immediate inspection required
+BR-0395,0.799,8,Critical,Immediate inspection required
+BR-0393,0.798,8,Critical,Immediate inspection required
+BR-0939,0.798,8,Critical,Immediate inspection required
+BR-0717,0.797,8,Critical,Immediate inspection required
+BR-0186,0.796,8,Critical,Immediate inspection required
+BR-0987,0.796,8,Critical,Immediate inspection required
+BR-0433,0.792,8,Critical,Immediate inspection required
+BR-0177,0.792,8,Critical,Immediate inspection required
+BR-0464,0.792,8,Critical,Immediate inspection required
+BR-0721,0.79,8,Critical,Immediate inspection required
+BR-0036,0.788,8,Critical,Immediate inspection required
+BR-0946,0.788,8,Critical,Immediate inspection required
+BR-0325,0.787,8,Critical,Immediate inspection required
+BR-0497,0.787,8,Critical,Immediate inspection required
+BR-0720,0.785,8,Critical,Immediate inspection required
+BR-0190,0.784,8,Critical,Immediate inspection required
+BR-0975,0.784,8,Critical,Immediate inspection required
+BR-0148,0.783,8,Critical,Immediate inspection required
+BR-0366,0.783,8,Critical,Immediate inspection required
+BR-0596,0.782,8,Critical,Immediate inspection required
+BR-0044,0.782,8,Critical,Immediate inspection required
+BR-0137,0.781,8,Critical,Immediate inspection required
+BR-0067,0.781,8,Critical,Immediate inspection required
+BR-0636,0.78,8,Critical,Immediate inspection required
+BR-0967,0.78,8,Critical,Immediate inspection required
+BR-0313,0.779,8,Critical,Immediate inspection required
+BR-0546,0.779,8,Critical,Immediate inspection required
+BR-0171,0.777,8,Critical,Immediate inspection required
+BR-0181,0.775,8,Critical,Immediate inspection required
+BR-0208,0.775,8,Critical,Immediate inspection required
+BR-0039,0.775,8,Critical,Immediate inspection required
+BR-0565,0.773,8,Critical,Immediate inspection required
+BR-0505,0.773,8,Critical,Immediate inspection required
+BR-0445,0.773,8,Critical,Immediate inspection required
+BR-0174,0.772,8,Critical,Immediate inspection required
+BR-0398,0.772,8,Critical,Immediate inspection required
+BR-0337,0.772,8,Critical,Immediate inspection required
+BR-0522,0.771,8,Critical,Immediate inspection required
+BR-0065,0.77,9,Critical,Immediate inspection required
+BR-0088,0.77,9,Critical,Immediate inspection required
+BR-0411,0.768,9,Critical,Immediate inspection required
+BR-0027,0.768,9,Critical,Immediate inspection required
+BR-0943,0.768,9,Critical,Immediate inspection required
+BR-0949,0.767,9,Critical,Immediate inspection required
+BR-0752,0.767,9,Critical,Immediate inspection required
+BR-0189,0.767,9,Critical,Immediate inspection required
+BR-0455,0.765,9,Critical,Immediate inspection required
+BR-0159,0.764,9,Critical,Immediate inspection required
+BR-0160,0.764,9,Critical,Immediate inspection required
+BR-0287,0.764,9,Critical,Immediate inspection required
+BR-0982,0.763,9,Critical,Immediate inspection required
+BR-0786,0.763,9,Critical,Immediate inspection required
+BR-0658,0.763,9,Critical,Immediate inspection required
+BR-0468,0.761,9,Critical,Immediate inspection required
+BR-0180,0.761,9,Critical,Immediate inspection required
+BR-0532,0.76,9,Critical,Immediate inspection required
+BR-0236,0.758,9,Critical,Immediate inspection required
+BR-0326,0.758,9,Critical,Immediate inspection required
+BR-0833,0.757,9,Critical,Immediate inspection required
+BR-0434,0.757,9,Critical,Immediate inspection required
+BR-0506,0.757,9,Critical,Immediate inspection required
+BR-0108,0.757,9,Critical,Immediate inspection required
+BR-0155,0.755,9,Critical,Immediate inspection required
+BR-0540,0.755,9,Critical,Immediate inspection required
+BR-0787,0.755,9,Critical,Immediate inspection required
+BR-0205,0.754,9,Critical,Immediate inspection required
+BR-0328,0.752,9,Critical,Immediate inspection required
+BR-0680,0.752,9,Critical,Immediate inspection required
+BR-0331,0.751,9,Critical,Immediate inspection required
+BR-0853,0.75,9,Critical,Immediate inspection required
+BR-0735,0.75,9,Critical,Immediate inspection required
+BR-0406,0.75,9,High,Plan maintenance within 6 months
+BR-0657,0.749,9,High,Plan maintenance within 6 months
+BR-0323,0.749,9,High,Plan maintenance within 6 months
+BR-0831,0.749,9,High,Plan maintenance within 6 months
+BR-0054,0.748,9,High,Plan maintenance within 6 months
+BR-0568,0.748,9,High,Plan maintenance within 6 months
+BR-0086,0.748,9,High,Plan maintenance within 6 months
+BR-0102,0.747,9,High,Plan maintenance within 6 months
+BR-0386,0.747,9,High,Plan maintenance within 6 months
+BR-0822,0.747,9,High,Plan maintenance within 6 months
+BR-0112,0.746,9,High,Plan maintenance within 6 months
+BR-0303,0.746,9,High,Plan maintenance within 6 months
+BR-0934,0.745,9,High,Plan maintenance within 6 months
+BR-0092,0.745,9,High,Plan maintenance within 6 months
+BR-0390,0.745,9,High,Plan maintenance within 6 months
+BR-0745,0.744,9,High,Plan maintenance within 6 months
+BR-0111,0.744,9,High,Plan maintenance within 6 months
+BR-0321,0.744,9,High,Plan maintenance within 6 months
+BR-0110,0.744,9,High,Plan maintenance within 6 months
+BR-0713,0.743,9,High,Plan maintenance within 6 months
+BR-0759,0.743,9,High,Plan maintenance within 6 months
+BR-0618,0.743,9,High,Plan maintenance within 6 months
+BR-0610,0.742,9,High,Plan maintenance within 6 months
+BR-0509,0.741,9,High,Plan maintenance within 6 months
+BR-0318,0.74,9,High,Plan maintenance within 6 months
+BR-0517,0.74,9,High,Plan maintenance within 6 months
+BR-0521,0.738,9,High,Plan maintenance within 6 months
+BR-0391,0.738,9,High,Plan maintenance within 6 months
+BR-0928,0.737,9,High,Plan maintenance within 6 months
+BR-0118,0.737,9,High,Plan maintenance within 6 months
+BR-0355,0.737,9,High,Plan maintenance within 6 months
+BR-0600,0.736,9,High,Plan maintenance within 6 months
+BR-0947,0.735,9,High,Plan maintenance within 6 months
+BR-0215,0.735,9,High,Plan maintenance within 6 months
+BR-0689,0.735,9,High,Plan maintenance within 6 months
+BR-0634,0.734,9,High,Plan maintenance within 6 months
+BR-0264,0.732,9,High,Plan maintenance within 6 months
+BR-0061,0.732,9,High,Plan maintenance within 6 months
+BR-0297,0.731,9,High,Plan maintenance within 6 months
+BR-0080,0.731,9,High,Plan maintenance within 6 months
+BR-0604,0.731,9,High,Plan maintenance within 6 months
+BR-0047,0.729,10,High,Plan maintenance within 6 months
+BR-0733,0.728,10,High,Plan maintenance within 6 months
+BR-0018,0.728,10,High,Plan maintenance within 6 months
+BR-0539,0.727,10,High,Plan maintenance within 6 months
+BR-0842,0.727,10,High,Plan maintenance within 6 months
+BR-0046,0.726,10,High,Plan maintenance within 6 months
+BR-0057,0.725,10,High,Plan maintenance within 6 months
+BR-0892,0.725,10,High,Plan maintenance within 6 months
+BR-0353,0.724,10,High,Plan maintenance within 6 months
+BR-0120,0.724,10,High,Plan maintenance within 6 months
+BR-0335,0.724,10,High,Plan maintenance within 6 months
+BR-0695,0.724,10,High,Plan maintenance within 6 months
+BR-0034,0.723,10,High,Plan maintenance within 6 months
+BR-0626,0.723,10,High,Plan maintenance within 6 months
+BR-0029,0.722,10,High,Plan maintenance within 6 months
+BR-0193,0.722,10,High,Plan maintenance within 6 months
+BR-0492,0.722,10,High,Plan maintenance within 6 months
+BR-0014,0.721,10,High,Plan maintenance within 6 months
+BR-0665,0.721,10,High,Plan maintenance within 6 months
+BR-0062,0.72,10,High,Plan maintenance within 6 months
+BR-0662,0.719,10,High,Plan maintenance within 6 months
+BR-0547,0.719,10,High,Plan maintenance within 6 months
+BR-0494,0.717,10,High,Plan maintenance within 6 months
+BR-0890,0.717,10,High,Plan maintenance within 6 months
+BR-0818,0.716,10,High,Plan maintenance within 6 months
+BR-0359,0.716,10,High,Plan maintenance within 6 months
+BR-0254,0.714,10,High,Plan maintenance within 6 months
+BR-0115,0.714,10,High,Plan maintenance within 6 months
+BR-0869,0.714,10,High,Plan maintenance within 6 months
+BR-0902,0.714,10,High,Plan maintenance within 6 months
+BR-0005,0.714,10,High,Plan maintenance within 6 months
+BR-0496,0.713,10,High,Plan maintenance within 6 months
+BR-0919,0.713,10,High,Plan maintenance within 6 months
+BR-0624,0.712,10,High,Plan maintenance within 6 months
+BR-0737,0.711,10,High,Plan maintenance within 6 months
+BR-0382,0.711,10,High,Plan maintenance within 6 months
+BR-0461,0.71,10,High,Plan maintenance within 6 months
+BR-0885,0.71,10,High,Plan maintenance within 6 months
+BR-0256,0.709,10,High,Plan maintenance within 6 months
+BR-0454,0.709,10,High,Plan maintenance within 6 months
+BR-0004,0.709,10,High,Plan maintenance within 6 months
+BR-0801,0.709,10,High,Plan maintenance within 6 months
+BR-0968,0.709,10,High,Plan maintenance within 6 months
+BR-0732,0.709,10,High,Plan maintenance within 6 months
+BR-0617,0.708,10,High,Plan maintenance within 6 months
+BR-0953,0.707,10,High,Plan maintenance within 6 months
+BR-0431,0.707,10,High,Plan maintenance within 6 months
+BR-0716,0.706,10,High,Plan maintenance within 6 months
+BR-0747,0.706,10,High,Plan maintenance within 6 months
+BR-0554,0.706,10,High,Plan maintenance within 6 months
+BR-0779,0.705,10,High,Plan maintenance within 6 months
+BR-0861,0.705,10,High,Plan maintenance within 6 months
+BR-0845,0.705,10,High,Plan maintenance within 6 months
+BR-0301,0.705,10,High,Plan maintenance within 6 months
+BR-0192,0.704,10,High,Plan maintenance within 6 months
+BR-0578,0.704,10,High,Plan maintenance within 6 months
+BR-0203,0.703,10,High,Plan maintenance within 6 months
+BR-0863,0.703,10,High,Plan maintenance within 6 months
+BR-0776,0.703,10,High,Plan maintenance within 6 months
+BR-0723,0.702,10,High,Plan maintenance within 6 months
+BR-0601,0.702,10,High,Plan maintenance within 6 months
+BR-0476,0.702,10,High,Plan maintenance within 6 months
+BR-0248,0.702,10,High,Plan maintenance within 6 months
+BR-0781,0.701,10,High,Plan maintenance within 6 months
+BR-0413,0.701,10,High,Plan maintenance within 6 months
+BR-0368,0.701,10,High,Plan maintenance within 6 months
+BR-0808,0.701,10,High,Plan maintenance within 6 months
+BR-0024,0.7,10,High,Plan maintenance within 6 months
+BR-0381,0.7,10,High,Plan maintenance within 6 months
+BR-0545,0.699,10,High,Plan maintenance within 6 months
+BR-0347,0.699,10,High,Plan maintenance within 6 months
+BR-0357,0.699,10,High,Plan maintenance within 6 months
+BR-0265,0.698,10,High,Plan maintenance within 6 months
+BR-0045,0.698,10,High,Plan maintenance within 6 months
+BR-0806,0.698,10,High,Plan maintenance within 6 months
+BR-0755,0.697,10,High,Plan maintenance within 6 months
+BR-0528,0.697,10,High,Plan maintenance within 6 months
+BR-0482,0.697,10,High,Plan maintenance within 6 months
+BR-0655,0.695,10,High,Plan maintenance within 6 months
+BR-0242,0.695,10,High,Plan maintenance within 6 months
+BR-0529,0.695,10,High,Plan maintenance within 6 months
+BR-0621,0.694,10,High,Plan maintenance within 6 months
+BR-0802,0.693,10,High,Plan maintenance within 6 months
+BR-0139,0.693,10,High,Plan maintenance within 6 months
+BR-0426,0.692,10,High,Plan maintenance within 6 months
+BR-0815,0.692,10,High,Plan maintenance within 6 months
+BR-0059,0.691,10,High,Plan maintenance within 6 months
+BR-0068,0.69,10,High,Plan maintenance within 6 months
+BR-0948,0.69,10,High,Plan maintenance within 6 months
+BR-0422,0.689,10,High,Plan maintenance within 6 months
+BR-0073,0.689,10,High,Plan maintenance within 6 months
+BR-0963,0.688,10,High,Plan maintenance within 6 months
+BR-0121,0.687,11,High,Plan maintenance within 6 months
+BR-0616,0.687,11,High,Plan maintenance within 6 months
+BR-0512,0.687,11,High,Plan maintenance within 6 months
+BR-0089,0.686,11,High,Plan maintenance within 6 months
+BR-0611,0.686,11,High,Plan maintenance within 6 months
+BR-0498,0.686,11,High,Plan maintenance within 6 months
+BR-0367,0.685,11,High,Plan maintenance within 6 months
+BR-0790,0.685,11,High,Plan maintenance within 6 months
+BR-0485,0.685,11,High,Plan maintenance within 6 months
+BR-0979,0.684,11,High,Plan maintenance within 6 months
+BR-0058,0.684,11,High,Plan maintenance within 6 months
+BR-0187,0.682,11,High,Plan maintenance within 6 months
+BR-0311,0.681,11,High,Plan maintenance within 6 months
+BR-0814,0.681,11,High,Plan maintenance within 6 months
+BR-0938,0.68,11,High,Plan maintenance within 6 months
+BR-0009,0.68,11,High,Plan maintenance within 6 months
+BR-0966,0.679,11,High,Plan maintenance within 6 months
+BR-0052,0.678,11,High,Plan maintenance within 6 months
+BR-0163,0.677,11,High,Plan maintenance within 6 months
+BR-0097,0.677,11,High,Plan maintenance within 6 months
+BR-0156,0.675,11,High,Plan maintenance within 6 months
+BR-0588,0.675,11,High,Plan maintenance within 6 months
+BR-0396,0.675,11,High,Plan maintenance within 6 months
+BR-0360,0.674,11,High,Plan maintenance within 6 months
+BR-0379,0.674,11,High,Plan maintenance within 6 months
+BR-0015,0.674,11,High,Plan maintenance within 6 months
+BR-0162,0.673,11,High,Plan maintenance within 6 months
+BR-0718,0.673,11,High,Plan maintenance within 6 months
+BR-0910,0.672,11,High,Plan maintenance within 6 months
+BR-0292,0.672,11,High,Plan maintenance within 6 months
+BR-0668,0.669,11,High,Plan maintenance within 6 months
+BR-0637,0.669,11,High,Plan maintenance within 6 months
+BR-0231,0.668,11,High,Plan maintenance within 6 months
+BR-0196,0.668,11,High,Plan maintenance within 6 months
+BR-0614,0.668,11,High,Plan maintenance within 6 months
+BR-0211,0.668,11,High,Plan maintenance within 6 months
+BR-0427,0.667,11,High,Plan maintenance within 6 months
+BR-0349,0.667,11,High,Plan maintenance within 6 months
+BR-0467,0.666,11,High,Plan maintenance within 6 months
+BR-0405,0.666,11,High,Plan maintenance within 6 months
+BR-0877,0.665,11,High,Plan maintenance within 6 months
+BR-0113,0.665,11,High,Plan maintenance within 6 months
+BR-0999,0.665,11,High,Plan maintenance within 6 months
+BR-0043,0.665,11,High,Plan maintenance within 6 months
+BR-0739,0.665,11,High,Plan maintenance within 6 months
+BR-0384,0.664,11,High,Plan maintenance within 6 months
+BR-0905,0.663,11,High,Plan maintenance within 6 months
+BR-0630,0.663,11,High,Plan maintenance within 6 months
+BR-0076,0.663,11,High,Plan maintenance within 6 months
+BR-0581,0.663,11,High,Plan maintenance within 6 months
+BR-0096,0.663,11,High,Plan maintenance within 6 months
+BR-0909,0.662,11,High,Plan maintenance within 6 months
+BR-0674,0.661,11,High,Plan maintenance within 6 months
+BR-0478,0.661,11,High,Plan maintenance within 6 months
+BR-0900,0.661,11,High,Plan maintenance within 6 months
+BR-0394,0.66,11,High,Plan maintenance within 6 months
+BR-0107,0.66,11,High,Plan maintenance within 6 months
+BR-0956,0.66,11,High,Plan maintenance within 6 months
+BR-0091,0.659,11,High,Plan maintenance within 6 months
+BR-0770,0.659,11,High,Plan maintenance within 6 months
+BR-0437,0.659,11,High,Plan maintenance within 6 months
+BR-0087,0.659,11,High,Plan maintenance within 6 months
+BR-0319,0.658,11,High,Plan maintenance within 6 months
+BR-0500,0.658,11,High,Plan maintenance within 6 months
+BR-0041,0.657,11,High,Plan maintenance within 6 months
+BR-0151,0.656,11,High,Plan maintenance within 6 months
+BR-0577,0.656,11,High,Plan maintenance within 6 months
+BR-0019,0.656,11,High,Plan maintenance within 6 months
+BR-0466,0.653,11,High,Plan maintenance within 6 months
+BR-0875,0.653,11,High,Plan maintenance within 6 months
+BR-0659,0.651,11,High,Plan maintenance within 6 months
+BR-0888,0.651,11,High,Plan maintenance within 6 months
+BR-0462,0.65,11,High,Plan maintenance within 6 months
+BR-0271,0.65,11,High,Plan maintenance within 6 months
+BR-0729,0.65,11,High,Plan maintenance within 6 months
+BR-0090,0.65,11,High,Plan maintenance within 6 months
+BR-0069,0.65,11,High,Plan maintenance within 6 months
+BR-0343,0.649,11,High,Plan maintenance within 6 months
+BR-0135,0.649,11,High,Plan maintenance within 6 months
+BR-0066,0.649,11,High,Plan maintenance within 6 months
+BR-0408,0.649,11,High,Plan maintenance within 6 months
+BR-0290,0.648,11,High,Plan maintenance within 6 months
+BR-0284,0.647,11,High,Plan maintenance within 6 months
+BR-0995,0.647,11,High,Plan maintenance within 6 months
+BR-0259,0.647,11,High,Plan maintenance within 6 months
+BR-0881,0.647,11,High,Plan maintenance within 6 months
+BR-0632,0.647,11,High,Plan maintenance within 6 months
+BR-0816,0.647,11,High,Plan maintenance within 6 months
+BR-0279,0.647,11,High,Plan maintenance within 6 months
+BR-0456,0.646,11,High,Plan maintenance within 6 months
+BR-0132,0.646,11,High,Plan maintenance within 6 months
+BR-0202,0.646,11,High,Plan maintenance within 6 months
+BR-0654,0.644,12,High,Plan maintenance within 6 months
+BR-0341,0.644,12,High,Plan maintenance within 6 months
+BR-0399,0.643,12,High,Plan maintenance within 6 months
+BR-0436,0.643,12,High,Plan maintenance within 6 months
+BR-0672,0.642,12,High,Plan maintenance within 6 months
+BR-0884,0.642,12,High,Plan maintenance within 6 months
+BR-0848,0.642,12,High,Plan maintenance within 6 months
+BR-0643,0.641,12,High,Plan maintenance within 6 months
+BR-0312,0.641,12,High,Plan maintenance within 6 months
+BR-0213,0.64,12,High,Plan maintenance within 6 months
+BR-0484,0.64,12,High,Plan maintenance within 6 months
+BR-0167,0.64,12,High,Plan maintenance within 6 months
+BR-0145,0.639,12,High,Plan maintenance within 6 months
+BR-0281,0.638,12,High,Plan maintenance within 6 months
+BR-0744,0.638,12,High,Plan maintenance within 6 months
+BR-0580,0.637,12,High,Plan maintenance within 6 months
+BR-0119,0.636,12,High,Plan maintenance within 6 months
+BR-0667,0.636,12,High,Plan maintenance within 6 months
+BR-0821,0.636,12,High,Plan maintenance within 6 months
+BR-0450,0.635,12,High,Plan maintenance within 6 months
+BR-0715,0.635,12,High,Plan maintenance within 6 months
+BR-0640,0.635,12,High,Plan maintenance within 6 months
+BR-0511,0.635,12,High,Plan maintenance within 6 months
+BR-0518,0.635,12,High,Plan maintenance within 6 months
+BR-0670,0.634,12,High,Plan maintenance within 6 months
+BR-0463,0.634,12,High,Plan maintenance within 6 months
+BR-0146,0.634,12,High,Plan maintenance within 6 months
+BR-0150,0.633,12,High,Plan maintenance within 6 months
+BR-0896,0.633,12,High,Plan maintenance within 6 months
+BR-0812,0.633,12,High,Plan maintenance within 6 months
+BR-0597,0.632,12,High,Plan maintenance within 6 months
+BR-0370,0.632,12,High,Plan maintenance within 6 months
+BR-0750,0.632,12,High,Plan maintenance within 6 months
+BR-0490,0.63,12,High,Plan maintenance within 6 months
+BR-0361,0.63,12,High,Plan maintenance within 6 months
+BR-0738,0.629,12,High,Plan maintenance within 6 months
+BR-0037,0.629,12,High,Plan maintenance within 6 months
+BR-0664,0.628,12,High,Plan maintenance within 6 months
+BR-0563,0.628,12,High,Plan maintenance within 6 months
+BR-0276,0.627,12,High,Plan maintenance within 6 months
+BR-0376,0.627,12,High,Plan maintenance within 6 months
+BR-0628,0.627,12,High,Plan maintenance within 6 months
+BR-0269,0.626,12,High,Plan maintenance within 6 months
+BR-0288,0.626,12,High,Plan maintenance within 6 months
+BR-0551,0.626,12,High,Plan maintenance within 6 months
+BR-0847,0.626,12,High,Plan maintenance within 6 months
+BR-0474,0.625,12,High,Plan maintenance within 6 months
+BR-0633,0.624,12,High,Plan maintenance within 6 months
+BR-0941,0.622,12,High,Plan maintenance within 6 months
+BR-0549,0.622,12,High,Plan maintenance within 6 months
+BR-0419,0.62,12,High,Plan maintenance within 6 months
+BR-0991,0.62,12,High,Plan maintenance within 6 months
+BR-0569,0.62,12,High,Plan maintenance within 6 months
+BR-0520,0.62,12,High,Plan maintenance within 6 months
+BR-0105,0.619,12,High,Plan maintenance within 6 months
+BR-0904,0.618,12,High,Plan maintenance within 6 months
+BR-0592,0.618,12,High,Plan maintenance within 6 months
+BR-0126,0.618,12,High,Plan maintenance within 6 months
+BR-0176,0.618,12,High,Plan maintenance within 6 months
+BR-0817,0.617,12,High,Plan maintenance within 6 months
+BR-0251,0.617,12,High,Plan maintenance within 6 months
+BR-0663,0.616,12,High,Plan maintenance within 6 months
+BR-0249,0.616,12,High,Plan maintenance within 6 months
+BR-0543,0.615,12,High,Plan maintenance within 6 months
+BR-0958,0.615,12,High,Plan maintenance within 6 months
+BR-0619,0.614,12,High,Plan maintenance within 6 months
+BR-0571,0.613,12,High,Plan maintenance within 6 months
+BR-0651,0.612,12,High,Plan maintenance within 6 months
+BR-0040,0.612,12,High,Plan maintenance within 6 months
+BR-0013,0.612,12,High,Plan maintenance within 6 months
+BR-0660,0.611,12,High,Plan maintenance within 6 months
+BR-0623,0.61,12,High,Plan maintenance within 6 months
+BR-0887,0.61,12,High,Plan maintenance within 6 months
+BR-0705,0.61,12,High,Plan maintenance within 6 months
+BR-0782,0.61,12,High,Plan maintenance within 6 months
+BR-0410,0.61,12,High,Plan maintenance within 6 months
+BR-0898,0.609,12,High,Plan maintenance within 6 months
+BR-0011,0.609,12,High,Plan maintenance within 6 months
+BR-0273,0.608,12,High,Plan maintenance within 6 months
+BR-0811,0.607,12,High,Plan maintenance within 6 months
+BR-0791,0.607,12,High,Plan maintenance within 6 months
+BR-0295,0.607,12,High,Plan maintenance within 6 months
+BR-0719,0.607,12,High,Plan maintenance within 6 months
+BR-0882,0.606,12,High,Plan maintenance within 6 months
+BR-0157,0.605,12,High,Plan maintenance within 6 months
+BR-0691,0.605,12,High,Plan maintenance within 6 months
+BR-0826,0.605,12,High,Plan maintenance within 6 months
+BR-0071,0.605,12,High,Plan maintenance within 6 months
+BR-0277,0.605,12,High,Plan maintenance within 6 months
+BR-0828,0.605,12,High,Plan maintenance within 6 months
+BR-0219,0.605,12,High,Plan maintenance within 6 months
+BR-0800,0.604,12,High,Plan maintenance within 6 months
+BR-0819,0.604,13,High,Plan maintenance within 6 months
+BR-0523,0.603,13,High,Plan maintenance within 6 months
+BR-0188,0.603,13,High,Plan maintenance within 6 months
+BR-0031,0.603,13,High,Plan maintenance within 6 months
+BR-0602,0.602,13,High,Plan maintenance within 6 months
+BR-0763,0.602,13,High,Plan maintenance within 6 months
+BR-0627,0.6,13,High,Plan maintenance within 6 months
+BR-0897,0.6,13,High,Plan maintenance within 6 months
+BR-0320,0.6,13,High,Plan maintenance within 6 months
+BR-0535,0.6,13,High,Plan maintenance within 6 months
+BR-0559,0.6,13,High,Plan maintenance within 6 months
+BR-0314,0.599,13,High,Plan maintenance within 6 months
+BR-0805,0.598,13,High,Plan maintenance within 6 months
+BR-0457,0.598,13,High,Plan maintenance within 6 months
+BR-0084,0.597,13,High,Plan maintenance within 6 months
+BR-0775,0.596,13,High,Plan maintenance within 6 months
+BR-0329,0.596,13,High,Plan maintenance within 6 months
+BR-0286,0.596,13,High,Plan maintenance within 6 months
+BR-0727,0.596,13,High,Plan maintenance within 6 months
+BR-0392,0.596,13,High,Plan maintenance within 6 months
+BR-0291,0.595,13,High,Plan maintenance within 6 months
+BR-0533,0.595,13,High,Plan maintenance within 6 months
+BR-0798,0.595,13,High,Plan maintenance within 6 months
+BR-0994,0.595,13,High,Plan maintenance within 6 months
+BR-0988,0.594,13,High,Plan maintenance within 6 months
+BR-0416,0.594,13,High,Plan maintenance within 6 months
+BR-0104,0.594,13,High,Plan maintenance within 6 months
+BR-0283,0.594,13,High,Plan maintenance within 6 months
+BR-0780,0.594,13,High,Plan maintenance within 6 months
+BR-0473,0.594,13,High,Plan maintenance within 6 months
+BR-0409,0.593,13,High,Plan maintenance within 6 months
+BR-0183,0.593,13,High,Plan maintenance within 6 months
+BR-0874,0.592,13,High,Plan maintenance within 6 months
+BR-0374,0.591,13,High,Plan maintenance within 6 months
+BR-0079,0.591,13,High,Plan maintenance within 6 months
+BR-0098,0.591,13,High,Plan maintenance within 6 months
+BR-0849,0.591,13,High,Plan maintenance within 6 months
+BR-0774,0.591,13,High,Plan maintenance within 6 months
+BR-0206,0.59,13,High,Plan maintenance within 6 months
+BR-0128,0.59,13,High,Plan maintenance within 6 months
+BR-0423,0.59,13,High,Plan maintenance within 6 months
+BR-0493,0.589,13,High,Plan maintenance within 6 months
+BR-0743,0.588,13,High,Plan maintenance within 6 months
+BR-0650,0.588,13,High,Plan maintenance within 6 months
+BR-0140,0.587,13,High,Plan maintenance within 6 months
+BR-0275,0.587,13,High,Plan maintenance within 6 months
+BR-0465,0.587,13,High,Plan maintenance within 6 months
+BR-0356,0.586,13,High,Plan maintenance within 6 months
+BR-0584,0.586,13,High,Plan maintenance within 6 months
+BR-0420,0.585,13,High,Plan maintenance within 6 months
+BR-0385,0.585,13,High,Plan maintenance within 6 months
+BR-0306,0.583,13,High,Plan maintenance within 6 months
+BR-0502,0.583,13,High,Plan maintenance within 6 months
+BR-0377,0.582,13,High,Plan maintenance within 6 months
+BR-0593,0.581,13,High,Plan maintenance within 6 months
+BR-0262,0.581,13,High,Plan maintenance within 6 months
+BR-0687,0.581,13,High,Plan maintenance within 6 months
+BR-0586,0.581,13,High,Plan maintenance within 6 months
+BR-0907,0.58,13,High,Plan maintenance within 6 months
+BR-0504,0.58,13,High,Plan maintenance within 6 months
+BR-0965,0.579,13,High,Plan maintenance within 6 months
+BR-0836,0.579,13,High,Plan maintenance within 6 months
+BR-0351,0.579,13,High,Plan maintenance within 6 months
+BR-0293,0.578,13,High,Plan maintenance within 6 months
+BR-0017,0.578,13,High,Plan maintenance within 6 months
+BR-0064,0.578,13,High,Plan maintenance within 6 months
+BR-0983,0.577,13,High,Plan maintenance within 6 months
+BR-0125,0.576,13,High,Plan maintenance within 6 months
+BR-0583,0.576,13,High,Plan maintenance within 6 months
+BR-0880,0.576,13,High,Plan maintenance within 6 months
+BR-0023,0.576,13,High,Plan maintenance within 6 months
+BR-0916,0.575,13,High,Plan maintenance within 6 months
+BR-0795,0.574,13,High,Plan maintenance within 6 months
+BR-0042,0.574,13,High,Plan maintenance within 6 months
+BR-0685,0.572,13,High,Plan maintenance within 6 months
+BR-0028,0.571,13,High,Plan maintenance within 6 months
+BR-0470,0.571,13,High,Plan maintenance within 6 months
+BR-0282,0.571,13,High,Plan maintenance within 6 months
+BR-0222,0.571,13,High,Plan maintenance within 6 months
+BR-0766,0.571,13,High,Plan maintenance within 6 months
+BR-0048,0.571,13,High,Plan maintenance within 6 months
+BR-0736,0.571,13,High,Plan maintenance within 6 months
+BR-0635,0.567,13,High,Plan maintenance within 6 months
+BR-0488,0.567,13,High,Plan maintenance within 6 months
+BR-0870,0.567,13,High,Plan maintenance within 6 months
+BR-1000,0.566,13,High,Plan maintenance within 6 months
+BR-0686,0.566,13,High,Plan maintenance within 6 months
+BR-0165,0.566,13,High,Plan maintenance within 6 months
+BR-0753,0.565,13,High,Plan maintenance within 6 months
+BR-0980,0.565,13,High,Plan maintenance within 6 months
+BR-0891,0.564,13,High,Plan maintenance within 6 months
+BR-0974,0.563,13,High,Plan maintenance within 6 months
+BR-0538,0.563,13,High,Plan maintenance within 6 months
+BR-0866,0.563,13,High,Plan maintenance within 6 months
+BR-0340,0.562,14,High,Plan maintenance within 6 months
+BR-0197,0.562,14,High,Plan maintenance within 6 months
+BR-0499,0.562,14,High,Plan maintenance within 6 months
+BR-0550,0.561,14,High,Plan maintenance within 6 months
+BR-0704,0.561,14,High,Plan maintenance within 6 months
+BR-0435,0.56,14,High,Plan maintenance within 6 months
+BR-0049,0.56,14,High,Plan maintenance within 6 months
+BR-0051,0.56,14,High,Plan maintenance within 6 months
+BR-0872,0.56,14,High,Plan maintenance within 6 months
+BR-0258,0.56,14,High,Plan maintenance within 6 months
+BR-0683,0.559,14,High,Plan maintenance within 6 months
+BR-0240,0.558,14,High,Plan maintenance within 6 months
+BR-0677,0.558,14,High,Plan maintenance within 6 months
+BR-0810,0.558,14,High,Plan maintenance within 6 months
+BR-0429,0.558,14,High,Plan maintenance within 6 months
+BR-0933,0.557,14,High,Plan maintenance within 6 months
+BR-0214,0.557,14,High,Plan maintenance within 6 months
+BR-0218,0.557,14,High,Plan maintenance within 6 months
+BR-0507,0.555,14,High,Plan maintenance within 6 months
+BR-0785,0.554,14,High,Plan maintenance within 6 months
+BR-0990,0.554,14,High,Plan maintenance within 6 months
+BR-0951,0.554,14,High,Plan maintenance within 6 months
+BR-0003,0.554,14,High,Plan maintenance within 6 months
+BR-0692,0.553,14,High,Plan maintenance within 6 months
+BR-0997,0.553,14,High,Plan maintenance within 6 months
+BR-0270,0.553,14,High,Plan maintenance within 6 months
+BR-0008,0.553,14,High,Plan maintenance within 6 months
+BR-0016,0.553,14,High,Plan maintenance within 6 months
+BR-0873,0.553,14,High,Plan maintenance within 6 months
+BR-0228,0.553,14,High,Plan maintenance within 6 months
+BR-0823,0.553,14,High,Plan maintenance within 6 months
+BR-0417,0.552,14,High,Plan maintenance within 6 months
+BR-0681,0.551,14,High,Plan maintenance within 6 months
+BR-0333,0.551,14,High,Plan maintenance within 6 months
+BR-0358,0.551,14,High,Plan maintenance within 6 months
+BR-0981,0.55,14,High,Plan maintenance within 6 months
+BR-0652,0.55,14,High,Plan maintenance within 6 months
+BR-0544,0.55,14,High,Plan maintenance within 6 months
+BR-0760,0.549,14,High,Plan maintenance within 6 months
+BR-0756,0.549,14,High,Plan maintenance within 6 months
+BR-0570,0.549,14,High,Plan maintenance within 6 months
+BR-0244,0.548,14,High,Plan maintenance within 6 months
+BR-0294,0.548,14,High,Plan maintenance within 6 months
+BR-0620,0.547,14,High,Plan maintenance within 6 months
+BR-0081,0.547,14,High,Plan maintenance within 6 months
+BR-0561,0.546,14,High,Plan maintenance within 6 months
+BR-0078,0.546,14,High,Plan maintenance within 6 months
+BR-0572,0.544,14,High,Plan maintenance within 6 months
+BR-0762,0.543,14,High,Plan maintenance within 6 months
+BR-0591,0.543,14,High,Plan maintenance within 6 months
+BR-0220,0.542,14,High,Plan maintenance within 6 months
+BR-0709,0.542,14,High,Plan maintenance within 6 months
+BR-0412,0.541,14,High,Plan maintenance within 6 months
+BR-0252,0.541,14,High,Plan maintenance within 6 months
+BR-0093,0.54,14,High,Plan maintenance within 6 months
+BR-0707,0.539,14,High,Plan maintenance within 6 months
+BR-0573,0.539,14,High,Plan maintenance within 6 months
+BR-0305,0.539,14,High,Plan maintenance within 6 months
+BR-0961,0.538,14,High,Plan maintenance within 6 months
+BR-0447,0.538,14,High,Plan maintenance within 6 months
+BR-0699,0.538,14,High,Plan maintenance within 6 months
+BR-0536,0.537,14,High,Plan maintenance within 6 months
+BR-0501,0.537,14,High,Plan maintenance within 6 months
+BR-0414,0.537,14,High,Plan maintenance within 6 months
+BR-0075,0.537,14,High,Plan maintenance within 6 months
+BR-0684,0.535,14,High,Plan maintenance within 6 months
+BR-0060,0.535,14,High,Plan maintenance within 6 months
+BR-0378,0.534,14,High,Plan maintenance within 6 months
+BR-0622,0.533,14,High,Plan maintenance within 6 months
+BR-0169,0.533,14,High,Plan maintenance within 6 months
+BR-0491,0.532,14,High,Plan maintenance within 6 months
+BR-0233,0.532,14,High,Plan maintenance within 6 months
+BR-0415,0.531,14,High,Plan maintenance within 6 months
+BR-0224,0.531,14,High,Plan maintenance within 6 months
+BR-0327,0.531,14,High,Plan maintenance within 6 months
+BR-0852,0.531,14,High,Plan maintenance within 6 months
+BR-0740,0.53,14,High,Plan maintenance within 6 months
+BR-0404,0.53,14,High,Plan maintenance within 6 months
+BR-0889,0.529,14,High,Plan maintenance within 6 months
+BR-0579,0.529,14,High,Plan maintenance within 6 months
+BR-0857,0.529,14,High,Plan maintenance within 6 months
+BR-0425,0.528,14,High,Plan maintenance within 6 months
+BR-0324,0.528,14,High,Plan maintenance within 6 months
+BR-0289,0.527,14,High,Plan maintenance within 6 months
+BR-0200,0.527,14,High,Plan maintenance within 6 months
+BR-0460,0.524,14,High,Plan maintenance within 6 months
+BR-0432,0.524,14,High,Plan maintenance within 6 months
+BR-0844,0.524,14,High,Plan maintenance within 6 months
+BR-0767,0.524,14,High,Plan maintenance within 6 months
+BR-0984,0.523,14,High,Plan maintenance within 6 months
+BR-0832,0.523,14,High,Plan maintenance within 6 months
+BR-0765,0.522,14,High,Plan maintenance within 6 months
+BR-0021,0.522,14,High,Plan maintenance within 6 months
+BR-0354,0.52,15,High,Plan maintenance within 6 months
+BR-0006,0.52,15,High,Plan maintenance within 6 months
+BR-0575,0.52,15,High,Plan maintenance within 6 months
+BR-0387,0.519,15,High,Plan maintenance within 6 months
+BR-0548,0.518,15,High,Plan maintenance within 6 months
+BR-0001,0.517,15,High,Plan maintenance within 6 months
+BR-0475,0.516,15,High,Plan maintenance within 6 months
+BR-0237,0.516,15,High,Plan maintenance within 6 months
+BR-0204,0.516,15,High,Plan maintenance within 6 months
+BR-0053,0.516,15,High,Plan maintenance within 6 months
+BR-0336,0.516,15,High,Plan maintenance within 6 months
+BR-0274,0.516,15,High,Plan maintenance within 6 months
+BR-0530,0.515,15,High,Plan maintenance within 6 months
+BR-0676,0.514,15,High,Plan maintenance within 6 months
+BR-0708,0.513,15,High,Plan maintenance within 6 months
+BR-0334,0.513,15,High,Plan maintenance within 6 months
+BR-0772,0.513,15,High,Plan maintenance within 6 months
+BR-0758,0.512,15,High,Plan maintenance within 6 months
+BR-0862,0.512,15,High,Plan maintenance within 6 months
+BR-0560,0.512,15,High,Plan maintenance within 6 months
+BR-0927,0.512,15,High,Plan maintenance within 6 months
+BR-0950,0.511,15,High,Plan maintenance within 6 months
+BR-0728,0.511,15,High,Plan maintenance within 6 months
+BR-0625,0.511,15,High,Plan maintenance within 6 months
+BR-0764,0.51,15,High,Plan maintenance within 6 months
+BR-0363,0.509,15,High,Plan maintenance within 6 months
+BR-0245,0.509,15,High,Plan maintenance within 6 months
+BR-0646,0.509,15,High,Plan maintenance within 6 months
+BR-0082,0.508,15,High,Plan maintenance within 6 months
+BR-0179,0.508,15,High,Plan maintenance within 6 months
+BR-0332,0.507,15,High,Plan maintenance within 6 months
+BR-0960,0.506,15,High,Plan maintenance within 6 months
+BR-0407,0.505,15,High,Plan maintenance within 6 months
+BR-0562,0.504,15,High,Plan maintenance within 6 months
+BR-0241,0.504,15,High,Plan maintenance within 6 months
+BR-0130,0.504,15,High,Plan maintenance within 6 months
+BR-0741,0.503,15,High,Plan maintenance within 6 months
+BR-0250,0.503,15,High,Plan maintenance within 6 months
+BR-0055,0.503,15,High,Plan maintenance within 6 months
+BR-0050,0.502,15,High,Plan maintenance within 6 months
+BR-0923,0.502,15,High,Plan maintenance within 6 months
+BR-0929,0.502,15,High,Plan maintenance within 6 months
+BR-0656,0.502,15,High,Plan maintenance within 6 months
+BR-0915,0.501,15,High,Plan maintenance within 6 months
+BR-0513,0.501,15,High,Plan maintenance within 6 months
+BR-0185,0.5,15,High,Plan maintenance within 6 months
+BR-0669,0.499,15,Medium,Schedule inspection within 12 months
+BR-0921,0.497,15,Medium,Schedule inspection within 12 months
+BR-0510,0.497,15,Medium,Schedule inspection within 12 months
+BR-0469,0.496,15,Medium,Schedule inspection within 12 months
+BR-0751,0.496,15,Medium,Schedule inspection within 12 months
+BR-0515,0.496,15,Medium,Schedule inspection within 12 months
+BR-0644,0.496,15,Medium,Schedule inspection within 12 months
+BR-0296,0.494,15,Medium,Schedule inspection within 12 months
+BR-0446,0.493,15,Medium,Schedule inspection within 12 months
+BR-0152,0.493,15,Medium,Schedule inspection within 12 months
+BR-0302,0.493,15,Medium,Schedule inspection within 12 months
+BR-0223,0.492,15,Medium,Schedule inspection within 12 months
+BR-0514,0.492,15,Medium,Schedule inspection within 12 months
+BR-0608,0.491,15,Medium,Schedule inspection within 12 months
+BR-0403,0.491,15,Medium,Schedule inspection within 12 months
+BR-0754,0.49,15,Medium,Schedule inspection within 12 months
+BR-0606,0.49,15,Medium,Schedule inspection within 12 months
+BR-0697,0.49,15,Medium,Schedule inspection within 12 months
+BR-0789,0.489,15,Medium,Schedule inspection within 12 months
+BR-0712,0.489,15,Medium,Schedule inspection within 12 months
+BR-0931,0.489,15,Medium,Schedule inspection within 12 months
+BR-0342,0.489,15,Medium,Schedule inspection within 12 months
+BR-0263,0.489,15,Medium,Schedule inspection within 12 months
+BR-0661,0.488,15,Medium,Schedule inspection within 12 months
+BR-0742,0.487,15,Medium,Schedule inspection within 12 months
+BR-0778,0.484,15,Medium,Schedule inspection within 12 months
+BR-0996,0.484,15,Medium,Schedule inspection within 12 months
+BR-0452,0.484,15,Medium,Schedule inspection within 12 months
+BR-0566,0.484,15,Medium,Schedule inspection within 12 months
+BR-0788,0.483,15,Medium,Schedule inspection within 12 months
+BR-0317,0.483,15,Medium,Schedule inspection within 12 months
+BR-0564,0.483,15,Medium,Schedule inspection within 12 months
+BR-0525,0.482,15,Medium,Schedule inspection within 12 months
+BR-0971,0.482,15,Medium,Schedule inspection within 12 months
+BR-0131,0.482,15,Medium,Schedule inspection within 12 months
+BR-0989,0.481,15,Medium,Schedule inspection within 12 months
+BR-0056,0.48,15,Medium,Schedule inspection within 12 months
+BR-0489,0.48,15,Medium,Schedule inspection within 12 months
+BR-0421,0.479,16,Medium,Schedule inspection within 12 months
+BR-0339,0.479,16,Medium,Schedule inspection within 12 months
+BR-0922,0.477,16,Medium,Schedule inspection within 12 months
+BR-0400,0.477,16,Medium,Schedule inspection within 12 months
+BR-0217,0.477,16,Medium,Schedule inspection within 12 months
+BR-0487,0.477,16,Medium,Schedule inspection within 12 months
+BR-0172,0.476,16,Medium,Schedule inspection within 12 months
+BR-0642,0.476,16,Medium,Schedule inspection within 12 months
+BR-0730,0.476,16,Medium,Schedule inspection within 12 months
+BR-0401,0.475,16,Medium,Schedule inspection within 12 months
+BR-0913,0.474,16,Medium,Schedule inspection within 12 months
+BR-0117,0.473,16,Medium,Schedule inspection within 12 months
+BR-0272,0.472,16,Medium,Schedule inspection within 12 months
+BR-0589,0.472,16,Medium,Schedule inspection within 12 months
+BR-0239,0.472,16,Medium,Schedule inspection within 12 months
+BR-0940,0.471,16,Medium,Schedule inspection within 12 months
+BR-0598,0.471,16,Medium,Schedule inspection within 12 months
+BR-0926,0.47,16,Medium,Schedule inspection within 12 months
+BR-0007,0.47,16,Medium,Schedule inspection within 12 months
+BR-0942,0.47,16,Medium,Schedule inspection within 12 months
+BR-0207,0.47,16,Medium,Schedule inspection within 12 months
+BR-0430,0.469,16,Medium,Schedule inspection within 12 months
+BR-0955,0.468,16,Medium,Schedule inspection within 12 months
+BR-0375,0.468,16,Medium,Schedule inspection within 12 months
+BR-0850,0.468,16,Medium,Schedule inspection within 12 months
+BR-0524,0.468,16,Medium,Schedule inspection within 12 months
+BR-0792,0.467,16,Medium,Schedule inspection within 12 months
+BR-0830,0.467,16,Medium,Schedule inspection within 12 months
+BR-0114,0.466,16,Medium,Schedule inspection within 12 months
+BR-0020,0.464,16,Medium,Schedule inspection within 12 months
+BR-0944,0.463,16,Medium,Schedule inspection within 12 months
+BR-0330,0.463,16,Medium,Schedule inspection within 12 months
+BR-0917,0.462,16,Medium,Schedule inspection within 12 months
+BR-0227,0.462,16,Medium,Schedule inspection within 12 months
+BR-0615,0.459,16,Medium,Schedule inspection within 12 months
+BR-0191,0.458,16,Medium,Schedule inspection within 12 months
+BR-0837,0.457,16,Medium,Schedule inspection within 12 months
+BR-0143,0.457,16,Medium,Schedule inspection within 12 months
+BR-0682,0.456,16,Medium,Schedule inspection within 12 months
+BR-0908,0.456,16,Medium,Schedule inspection within 12 months
+BR-0477,0.456,16,Medium,Schedule inspection within 12 months
+BR-0714,0.454,16,Medium,Schedule inspection within 12 months
+BR-0920,0.454,16,Medium,Schedule inspection within 12 months
+BR-0838,0.453,16,Medium,Schedule inspection within 12 months
+BR-0841,0.453,16,Medium,Schedule inspection within 12 months
+BR-0481,0.453,16,Medium,Schedule inspection within 12 months
+BR-0688,0.452,16,Medium,Schedule inspection within 12 months
+BR-0749,0.452,16,Medium,Schedule inspection within 12 months
+BR-0918,0.452,16,Medium,Schedule inspection within 12 months
+BR-0304,0.452,16,Medium,Schedule inspection within 12 months
+BR-0959,0.449,16,Medium,Schedule inspection within 12 months
+BR-0397,0.448,16,Medium,Schedule inspection within 12 months
+BR-0985,0.448,16,Medium,Schedule inspection within 12 months
+BR-0698,0.448,16,Medium,Schedule inspection within 12 months
+BR-0352,0.447,16,Medium,Schedule inspection within 12 months
+BR-0362,0.446,16,Medium,Schedule inspection within 12 months
+BR-0310,0.446,16,Medium,Schedule inspection within 12 months
+BR-0706,0.445,16,Medium,Schedule inspection within 12 months
+BR-0142,0.445,16,Medium,Schedule inspection within 12 months
+BR-0675,0.444,16,Medium,Schedule inspection within 12 months
+BR-0649,0.443,16,Medium,Schedule inspection within 12 months
+BR-0954,0.442,16,Medium,Schedule inspection within 12 months
+BR-0238,0.436,17,Medium,Schedule inspection within 12 months
+BR-0372,0.435,17,Medium,Schedule inspection within 12 months
+BR-0648,0.435,17,Medium,Schedule inspection within 12 months
+BR-0629,0.435,17,Medium,Schedule inspection within 12 months
+BR-0587,0.434,17,Medium,Schedule inspection within 12 months
+BR-0771,0.433,17,Medium,Schedule inspection within 12 months
+BR-0448,0.433,17,Medium,Schedule inspection within 12 months
+BR-0459,0.433,17,Medium,Schedule inspection within 12 months
+BR-0603,0.431,17,Medium,Schedule inspection within 12 months
+BR-0124,0.431,17,Medium,Schedule inspection within 12 months
+BR-0936,0.431,17,Medium,Schedule inspection within 12 months
+BR-0824,0.43,17,Medium,Schedule inspection within 12 months
+BR-0026,0.43,17,Medium,Schedule inspection within 12 months
+BR-0893,0.43,17,Medium,Schedule inspection within 12 months
+BR-0843,0.429,17,Medium,Schedule inspection within 12 months
+BR-0428,0.427,17,Medium,Schedule inspection within 12 months
+BR-0371,0.427,17,Medium,Schedule inspection within 12 months
+BR-0103,0.427,17,Medium,Schedule inspection within 12 months
+BR-0638,0.425,17,Medium,Schedule inspection within 12 months
+BR-0173,0.424,17,Medium,Schedule inspection within 12 months
+BR-0542,0.423,17,Medium,Schedule inspection within 12 months
+BR-0035,0.423,17,Medium,Schedule inspection within 12 months
+BR-0365,0.423,17,Medium,Schedule inspection within 12 months
+BR-0911,0.422,17,Medium,Schedule inspection within 12 months
+BR-0666,0.421,17,Medium,Schedule inspection within 12 months
+BR-0195,0.421,17,Medium,Schedule inspection within 12 months
+BR-0182,0.42,17,Medium,Schedule inspection within 12 months
+BR-0867,0.42,17,Medium,Schedule inspection within 12 months
+BR-0834,0.418,17,Medium,Schedule inspection within 12 months
+BR-0100,0.417,17,Medium,Schedule inspection within 12 months
+BR-0734,0.416,17,Medium,Schedule inspection within 12 months
+BR-0607,0.415,17,Medium,Schedule inspection within 12 months
+BR-0612,0.413,17,Medium,Schedule inspection within 12 months
+BR-0307,0.413,17,Medium,Schedule inspection within 12 months
+BR-0267,0.413,17,Medium,Schedule inspection within 12 months
+BR-0678,0.412,17,Medium,Schedule inspection within 12 months
+BR-0122,0.412,17,Medium,Schedule inspection within 12 months
+BR-0748,0.411,17,Medium,Schedule inspection within 12 months
+BR-0783,0.41,17,Medium,Schedule inspection within 12 months
+BR-0348,0.409,17,Medium,Schedule inspection within 12 months
+BR-0444,0.409,17,Medium,Schedule inspection within 12 months
+BR-0063,0.407,17,Medium,Schedule inspection within 12 months
+BR-0899,0.406,17,Medium,Schedule inspection within 12 months
+BR-0694,0.404,17,Medium,Schedule inspection within 12 months
+BR-0495,0.404,17,Medium,Schedule inspection within 12 months
+BR-0074,0.403,17,Medium,Schedule inspection within 12 months
+BR-0085,0.403,17,Medium,Schedule inspection within 12 months
+BR-0605,0.402,17,Medium,Schedule inspection within 12 months
+BR-0166,0.401,17,Medium,Schedule inspection within 12 months
+BR-0234,0.401,17,Medium,Schedule inspection within 12 months
+BR-0235,0.4,17,Medium,Schedule inspection within 12 months
+BR-0846,0.399,17,Medium,Schedule inspection within 12 months
+BR-0871,0.399,17,Medium,Schedule inspection within 12 months
+BR-0925,0.399,17,Medium,Schedule inspection within 12 months
+BR-0483,0.399,17,Medium,Schedule inspection within 12 months
+BR-0322,0.396,17,Medium,Schedule inspection within 12 months
+BR-0784,0.391,18,Medium,Schedule inspection within 12 months
+BR-0969,0.39,18,Medium,Schedule inspection within 12 months
+BR-0757,0.388,18,Medium,Schedule inspection within 12 months
+BR-0809,0.388,18,Medium,Schedule inspection within 12 months
+BR-0556,0.387,18,Medium,Schedule inspection within 12 months
+BR-0876,0.386,18,Medium,Schedule inspection within 12 months
+BR-0595,0.384,18,Medium,Schedule inspection within 12 months
+BR-0458,0.384,18,Medium,Schedule inspection within 12 months
+BR-0993,0.383,18,Medium,Schedule inspection within 12 months
+BR-0858,0.383,18,Medium,Schedule inspection within 12 months
+BR-0141,0.38,18,Medium,Schedule inspection within 12 months
+BR-0116,0.377,18,Medium,Schedule inspection within 12 months
+BR-0613,0.375,18,Medium,Schedule inspection within 12 months
+BR-0268,0.375,18,Medium,Schedule inspection within 12 months
+BR-0153,0.374,18,Medium,Schedule inspection within 12 months
+BR-0216,0.372,18,Medium,Schedule inspection within 12 months
+BR-0962,0.369,18,Medium,Schedule inspection within 12 months
+BR-0350,0.368,18,Medium,Schedule inspection within 12 months
+BR-0693,0.366,18,Medium,Schedule inspection within 12 months
+BR-0038,0.36,18,Medium,Schedule inspection within 12 months
+BR-0147,0.358,18,Medium,Schedule inspection within 12 months
+BR-0945,0.358,18,Medium,Schedule inspection within 12 months
+BR-0702,0.355,18,Medium,Schedule inspection within 12 months
+BR-0724,0.353,19,Medium,Schedule inspection within 12 months
+BR-0439,0.352,19,Medium,Schedule inspection within 12 months
+BR-0442,0.352,19,Medium,Schedule inspection within 12 months
+BR-0094,0.351,19,Medium,Schedule inspection within 12 months
+BR-0820,0.35,19,Medium,Schedule inspection within 12 months
+BR-0209,0.348,19,Medium,Schedule inspection within 12 months
+BR-0726,0.347,19,Medium,Schedule inspection within 12 months
+BR-0345,0.346,19,Medium,Schedule inspection within 12 months
+BR-0671,0.339,19,Medium,Schedule inspection within 12 months
+BR-0952,0.338,19,Medium,Schedule inspection within 12 months
+BR-0552,0.337,19,Medium,Schedule inspection within 12 months
+BR-0480,0.336,19,Medium,Schedule inspection within 12 months
+BR-0970,0.335,19,Medium,Schedule inspection within 12 months
+BR-0696,0.334,19,Medium,Schedule inspection within 12 months
+BR-0807,0.333,19,Medium,Schedule inspection within 12 months
+BR-0134,0.332,19,Medium,Schedule inspection within 12 months
+BR-0937,0.33,19,Medium,Schedule inspection within 12 months
+BR-0731,0.322,19,Medium,Schedule inspection within 12 months
+BR-0886,0.322,19,Medium,Schedule inspection within 12 months
+BR-0022,0.322,19,Medium,Schedule inspection within 12 months
+BR-0804,0.319,19,Medium,Schedule inspection within 12 months
+BR-0639,0.318,19,Medium,Schedule inspection within 12 months
+BR-0109,0.318,19,Medium,Schedule inspection within 12 months
+BR-0453,0.318,19,Medium,Schedule inspection within 12 months
+BR-0443,0.315,19,Medium,Schedule inspection within 12 months
+BR-0799,0.312,20,Medium,Schedule inspection within 12 months
+BR-0503,0.311,20,Medium,Schedule inspection within 12 months
+BR-0797,0.308,20,Medium,Schedule inspection within 12 months
+BR-0033,0.308,20,Medium,Schedule inspection within 12 months
+BR-0574,0.303,20,Medium,Schedule inspection within 12 months
+BR-0701,0.303,20,Medium,Schedule inspection within 12 months
+BR-0794,0.298,20,Medium,Schedule inspection within 12 months
+BR-0243,0.296,20,Medium,Schedule inspection within 12 months
+BR-0441,0.294,20,Medium,Schedule inspection within 12 months
+BR-0829,0.293,20,Medium,Schedule inspection within 12 months
+BR-0935,0.292,20,Medium,Schedule inspection within 12 months
+BR-0032,0.29,20,Medium,Schedule inspection within 12 months
+BR-0986,0.289,20,Medium,Schedule inspection within 12 months
+BR-0083,0.285,20,Medium,Schedule inspection within 12 months
+BR-0030,0.283,20,Medium,Schedule inspection within 12 months
+BR-0516,0.281,20,Medium,Schedule inspection within 12 months
+BR-0839,0.28,20,Medium,Schedule inspection within 12 months
+BR-0526,0.277,20,Medium,Schedule inspection within 12 months
+BR-0803,0.274,20,Medium,Schedule inspection within 12 months
+BR-0856,0.273,20,Medium,Schedule inspection within 12 months
+BR-0471,0.265,21,Medium,Schedule inspection within 12 months
+BR-0285,0.263,21,Medium,Schedule inspection within 12 months
+BR-0964,0.255,21,Medium,Schedule inspection within 12 months
+BR-0266,0.247,21,Low,Continue routine monitoring
+BR-0864,0.237,21,Low,Continue routine monitoring
+BR-0924,0.226,22,Low,Continue routine monitoring
+BR-0486,0.217,22,Low,Continue routine monitoring
+BR-0316,0.204,22,Low,Continue routine monitoring
